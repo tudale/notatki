@@ -15,7 +15,7 @@ Zgadnąć możemy, że rozwiązaniem są funkcje postaci $x\left( t \right) = e^
 
 \section{Definicja}
 Układem równań równiczkowych zwyczajnych $m$-tego rzędu nazywamy wyrażenie: \[
-	F\left(t,\dot{x},\ddot{x},\ldots,x^{(m)}\right)=0 
+	F\left(t,x,\dot{x},\ddot{x},\ldots,x^{(m)}\right)=0 
 ,\] gdzie 
 \begin{align*}
 	x: & \quad\mathbb{R}\supseteq I \to \mathbb{R}^{n}\\
@@ -29,4 +29,24 @@ Zazwyczaj udaje się wyrazić najmniejszą pochodną w postaci rozwikłanej: $x^
 Jeżeli mamy $x^{\left( m \right) }=f(t,\dot{x},\ldots,x^{\left( m-1 \right) }$, to położywszy $y_{k}=x^{(k)}$, otrzymamy $$\dot{y_{0}} = y_1, \ldots, \quad \dot{y_{m-2}}=y_{m-1}, \quad \dot{y_{m-1}}=y_m=x^{\left( m \right) }=f\left( t,y \right) $$ dla $y=\left( y_0,...,y_{m-1} \right) \in \mathbb{R}^{m}$ . 
 A zatem mamy $\dot{y} = g\left( t,y \right) $.
 \section{Badanie roztworów nasyconych}
-Kolejny przykład zastosowania równań różniczkowych. Stwierdzono, że w cieczy można rozpuścić ilość soli, która zwiększa się proporcjonalnie do zmiany temperatur: $\delta s=k\delta T$, a więc $\frac{\delta s}{\delta T}=kS$, czyli w granicy $\frac{dS}{dt}=kS$. Znamy rozwiązanie tego równania, $S\left( T \right) =S\left( 0 \right) $. Biorąc $s_0=S(T_0), s_1=S(T_1)$, dostaniemy  
+Kolejny przykład zastosowania równań różniczkowych. Stwierdzono, że w cieczy można rozpuścić ilość soli, która zwiększa się proporcjonalnie do zmiany temperatur: $\Delta s=k\Delta T$, a więc $\frac{\Delta s}{\Delta T}=kS$, czyli w granicy $\frac{dS}{dt}=kS$. Znamy rozwiązanie tego równania, $S\left( T \right) =S\left( 0 \right) $. Biorąc $s_0=S(T_0), s_1=S(T_1)$, dostaniemy
+
+
+\section{Metoda rozdzielania zmiennych}
+Załóżmy, że mamy do czynienia z równaniem postaci $x'(t) = g(t)f\left(x(t)\right)$, albo pisząc zwięźlej: $x' = g(t)f(x)$, gdzie $x : \mathbb{R} \supseteq I \to \mathbb{R}$, $f : x\left[I\right] \to \mathbb{R}$. Załóżmy też, że $f(x) \neq 0$ dla każdego $x \in I$. Ponadto, niech dany będzie nam warunek początkowy: $x(t_0) = x_0$. Wprowadźmy następujące oznaczenia:
+\begin{align*}
+	G(t) =& \int_{t_0}^{t} g(s) ds \\
+	F(x) =& \int_{x_0}^{x(t)} \frac{1}{f(s)} ds
+\end{align*}
+Wówczas równanie $G(t) = F(x)$ zadaje zależność między $x(t)$ a $t$, będącą rozwiązaniem równania. Nie zawsze z takiej zależności możemy "odczytać" jawny wzór, ale z twierdzenia o funkcji uwikłanej wnioskujemy, że rozwiązanie istnieje. Równania postaci $x' = f(x)g(t)$ nazywamy równaniami \textbf{o rozdzielonych zmiennych}. 
+
+\textbf{Przykład}. Rozważmy równanie $e^{-x}(1+x')=1$. Prostymi przekształceniami algebraicznymi sprowadzamy równanie do postaci $x' = \frac{1-e^{-x}}{e^{-x}} = e^x-1$. W tym przypadku $f(x) = e^x-1$, $g(t) = 1$. Stąd wynika, że:
+\begin{align*}
+	G(t) =& \int_{t_0}^{t} 1 ds = t-t_0+c_1 \\
+	F(x) =& \int_{x_0}^{x(t)} \frac{1}{e^s-1} ds = \log|e^{-s}-1|\bigg|_{x_0}^{x(t)} = \log \left| \frac{e^{-x(t)}-1}{e^{-x_0}-1}\right| +c_2
+\end{align*}
+Zatem $x(t)$ możemy zapisać jako funkcję uwikłaną za pomocą następującego równania:
+\begin{align*}
+	t-t_0 + C = \log\left|\frac{e^{-x(t)}-1}{e^{-x_0}-1}\right|
+\end{align*}
+Stała $C = c_1-c_2$ jest dowolna, natomiast zadając stałe $t_0$ oraz $x_0$ sprawiamy, że tak otrzymane rozwiązanie równania różniczkowego będzie spełniać równość $f(t_0) = x_0$.
