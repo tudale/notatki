@@ -26,4 +26,7 @@ Zazwyczaj udaje się wyrazić najmniejszą pochodną w postaci rozwikłanej: $x^
 
 \section{Redukcja do układu równań pierwszego rzędu}
 
-Jeżeli mamy $x^{\left( m \right) }=f(t,xdot,\ldots,x^{\left( m-1 \right) }$, to położywszy $y_{}$
+Jeżeli mamy $x^{\left( m \right) }=f(t,\dot{x},\ldots,x^{\left( m-1 \right) }$, to położywszy $y_{k}=x^{(k)}$, otrzymamy $$\dot{y_{0}} = y_1, \ldots, \quad \dot{y_{m-2}}=y_{m-1}, \quad \dot{y_{m-1}}=y_m=x^{\left( m \right) }=f\left( t,y \right) $$ dla $y=\left( y_0,...,y_{m-1} \right) \in \mathbb{R}^{m}$ . 
+A zatem mamy $\dot{y} = g\left( t,y \right) $.
+\section{Badanie roztworów nasyconych}
+Kolejny przykład zastosowania równań różniczkowych. Stwierdzono, że w cieczy można rozpuścić ilość soli, która zwiększa się proporcjonalnie do zmiany temperatur: $\delta s=k\delta T$, a więc $\frac{\delta s}{\delta T}=kS$, czyli w granicy $\frac{dS}{dt}=kS$. Znamy rozwiązanie tego równania, $S\left( T \right) =S\left( 0 \right) $. Biorąc $s_0=S(T_0), s_1=S(T_1)$, dostaniemy  
