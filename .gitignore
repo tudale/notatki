@@ -9,3 +9,12 @@ notatki.pyproj
 c/master.synctex.gz
 c/master.log
 .vs/notatki/v16/.suo
+*.un~
+*.aux
+*.log
+*.aux
+*.aux
+*.log
+*.gz
+*.aux
+*.gz
