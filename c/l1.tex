@@ -1,0 +1,29 @@
+\section{Motywacja}
+
+
+Motywacją do rozważania równań różniczkowych będzie zagadnienie rozpadu promieniotwórczego.
+Eksperymentalnie sprawdzono, że tempo rozpadu jest wprost proporcjonalne do masy pierwiastka promieniotwórczego.
+Czyli dla pewnej $k>0$ mamy $x'(t)=-kx(t)$, gdzie $x\left(t \right) $ to masa pierwiastka w chwili $t$.
+Szukamy funkcji $m$, pomijać będziemy oznaczenie argumentu, oraz będziemy pisać $\dot{x}:=m'$. 
+
+Zgadnąć możemy, że rozwiązaniem są funkcje postaci $x\left( t \right) = e^{-kt}\cdot x\left( 0 \right) $. Powstaje naturalne pytanie -- czy wszystkie rozwiązania są takiej postaci? W tym przypadku możemy wykonać przejścia równoważne:
+\begin{align*}
+	\dot{x}+kx&=0\\
+	\dot{x}e^{kt}+ke^{kt}x&=0\\
+	\left( xe^{kt} \right) ^{\cdot }&=0 
+.\end{align*} Zatem $xe^{kt}$ jest stałą, więc $x\left( t \right) =c\cdot e^{-kt}$. 
+
+\section{Definicja}
+Układem równań równiczkowych zwyczajnych $m$-tego rzędu nazywamy wyrażenie: \[
+	F(\dot{x},\ddot{x},\ldots,x^{(m)})=0 
+,\] gdzie 
+\begin{align*}
+	x: & \quad\mathbb{R}\supseteq I \to \mathbb{R}^{n}\\
+	F:&  \quad\mathbb{R}^{1+\left( m+1 \right) n} \to \mathbb{R}^{k}
+.\end{align*}
+
+Zazwyczaj udaje się wyrazić najmniejszą pochodną w postaci rozwikłanej: $x^{\left( m \right) }=f\left( t, \dot{x}, \ldots, x^{\left( m-1 \right) } \right) $. Zwykle zakłąda się różniczkowalność lub lipschitzowskość funkcji $f$. 
+
+\section{Redukcja do układu równań pierwszego rzędu}
+
+Jeżeli mamy $x^{\left( m \right) }=f(t,xdot,\ldots,x^{\left( m-1 \right) }$, to położywszy $y_{k}$

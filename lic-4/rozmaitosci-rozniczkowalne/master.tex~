@@ -1,0 +1,10 @@
+\input{../preamble.tex}
+\input{coursepreamble.tex}
+\begin{document}
+\maketitle
+Plik: 
+\input{l35.tex}
+\input{l34.tex}
+\input{l33.tex}
+\input{l36.tex}
+\end{document}

@@ -1,0 +1,4 @@
+PWD C:\Users\dawid\Desktop\studia\c
+INPUT C:\miktex-portable\texmfs\data\miktex\data\le\pdftex\pdflatex.fmt
+INPUT l21.tex
+OUTPUT l21.log
