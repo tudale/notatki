@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+from __future__ import print_function
 import json
 import os
 import subprocess
@@ -139,4 +140,3 @@ if choice == '2':  # Zmień aktywny kurs
     else:
         os.system("cmd /c rmdir c")
         os.system("cmd /c mklink /j c \"lic-4\\" + courses_i[choice] + "\"")
-
