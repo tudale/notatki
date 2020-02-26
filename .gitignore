@@ -4,3 +4,8 @@
 *aux*
 *log*
 *tex.*
+*.sln
+notatki.pyproj
+c/master.synctex.gz
+c/master.log
+.vs/notatki/v16/.suo
