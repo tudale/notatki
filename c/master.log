@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.6)  26 FEB 2020 21:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.6)  27 FEB 2020 15:11
 entering extended mode
 **./master.tex
 (master.tex
@@ -180,6 +180,41 @@ Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 \SYSeqnum=\count107
 )
 Package: systeme 2019/01/13 v0.32 Mise en forme de systemes d'equations (CT)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/lm\lmodern.sty"
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
 )
 \c@theorem=\count108
 \c@lemma=\count109
@@ -412,31 +447,31 @@ Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 \px@Isdigit=\count113
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 194.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/zpltlf/m/n on input line 194.
+(Font)                  OT1/lmr/m/n --> OT1/zpltlf/m/n on input line 194.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/zpltlf/m/n on input line 194.
+(Font)                  OT1/lmr/bx/n --> OT1/zpltlf/m/n on input line 194.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  OT1/zpltlf/m/n --> OT1/zpltlf/b/n on input line 195.
 LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 198.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> T1/qhv/m/n on input line 198.
+(Font)                  OT1/lmss/m/n --> T1/qhv/m/n on input line 198.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> T1/qhv/m/n on input line 198.
+(Font)                  OT1/lmss/bx/n --> T1/qhv/m/n on input line 198.
 LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 199.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/zpltlf/m/it on input line 199.
+(Font)                  OT1/lmr/m/it --> OT1/zpltlf/m/it on input line 199.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/zpltlf/m/it on input line 199.
+(Font)                  OT1/lmr/bx/it --> OT1/zpltlf/m/it on input line 199.
 LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 200.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> T1/npxtt/m/n on input line 200.
+(Font)                  OT1/lmtt/m/n --> T1/npxtt/m/n on input line 200.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> T1/npxtt/m/n on input line 200.
+(Font)                  OT1/lmtt/m/n --> T1/npxtt/m/n on input line 200.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 202.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/zpltlf/b/n on input line 202.
+(Font)                  OT1/lmr/bx/n --> OT1/zpltlf/b/n on input line 202.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/zpltlf/b/n on input line 202.
+(Font)                  OT1/lmr/bx/n --> OT1/zpltlf/b/n on input line 202.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/zpltlf/m/it --> OT1/zpltlf/b/it on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
@@ -445,9 +480,9 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  T1/npxtt/m/n --> T1/npxtt/b/n on input line 206.
 LaTeX Font Info:    Redeclaring symbol font `letters' on input line 217.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
-(Font)                  OML/cmm/m/it --> OML/npxmi/m/it on input line 217.
+(Font)                  OML/lmm/m/it --> OML/npxmi/m/it on input line 217.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
-(Font)                  OML/cmm/b/it --> OML/npxmi/m/it on input line 217.
+(Font)                  OML/lmm/b/it --> OML/npxmi/m/it on input line 217.
 LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 (Font)                  OML/npxmi/m/it --> OML/npxmi/b/it on input line 218.
 \symlettersA=\mathgroup6
@@ -460,11 +495,11 @@ LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 246.
 LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
 (Font)              `symbols' in the math version `normal' on input line 246.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> LMS/npxsy/m/n on input line 246.
+(Font)                  OMS/lmsy/m/n --> LMS/npxsy/m/n on input line 246.
 LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
 (Font)              `symbols' in the math version `bold' on input line 246.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> LMS/npxsy/m/n on input line 246.
+(Font)                  OMS/lmsy/b/n --> LMS/npxsy/m/n on input line 246.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  LMS/npxsy/m/n --> LMS/npxsy/b/n on input line 247.
 \symAMSm=\mathgroup7
@@ -480,12 +515,12 @@ LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 3
 07.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> LMX/npxexx/m/n on input line 307.
+(Font)                  OMX/lmex/m/n --> LMX/npxexx/m/n on input line 307.
 LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
 (Font)              `largesymbols' in the math version `bold' on input line 307
 .
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> LMX/npxexx/m/n on input line 307.
+(Font)                  OMX/lmex/m/n --> LMX/npxexx/m/n on input line 307.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  LMX/npxexx/m/n --> LMX/npxexx/b/n on input line 308.
 \symlargesymbolsPXA=\mathgroup9
@@ -517,6 +552,13 @@ LaTeX Info: Redefining \not on input line 2132.
 LaTeX Info: Redefining \textsquare on input line 2147.
 LaTeX Info: Redefining \openbox on input line 2149.
 )
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1enc.def"
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
+))
 ("C:\Program Files\MiKTeX 2.9\tex/latex/import\import.sty"
 Package: import 2009/03/23  v 5.1
 )
@@ -754,86 +796,108 @@ LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 1.
-LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 6
+LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 2
 .
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\ot1zpltlf.fd"
 File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 6.
+(Font)              scaled to size 12.0pt on input line 2.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 6.
+(Font)              scaled to size 8.8pt on input line 2.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
-(Font)              scaled to size 6.6pt on input line 6.
-LaTeX Font Info:    Try loading font information for U+msa on input line 6.
+(Font)              scaled to size 6.6pt on input line 2.
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 6.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+npxmia on input line 6.
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 2.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\unpxmia.fd"
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Try loading font information for U+npxsym on input line 6.
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 2.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\unpxsym.fd"
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Try loading font information for U+npxsyc on input line 6.
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 2.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\unpxsyc.fd"
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 14.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 8.8pt on input line 14.
-LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
-(Font)              scaled to size 6.6pt on input line 14.
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 8.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 8.
+LaTeX Font Info:    Try loading font information for TS1+zpltlf on input line 1
+0.
 
-Overfull \hbox (21.16061pt too wide) in paragraph at lines 25--26
-[]\T1/zpltlf/m/n/12 Zazwyczaj udaje si[] wy-ra-zi¢ najmniejsz[] pochodn[] w po-
-staci roz-wi-kªa-nej: $\OML/npxmi/m/it/12 x[] \U/npxmia/m/it/12 = \OML/npxmi/m/
-it/12 f []$\T1/zpltlf/m/n/12 .
- []
-
-[1
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\ts1zpltlf.fd"
+File: ts1zpltlf.fd 2015/01/18 v1.0 fd file for TS1/zpltlf
+)
+LaTeX Font Info:    Font shape `TS1/zpltlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 10.
+LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 15.
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 15.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 15.
+ [1
 
 {C:/Users/Desant/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
-(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 40.
-LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 40.
-)
-[2] (master.aux) ) 
+Overfull \hbox (20.85411pt too wide) in paragraph at lines 75--77
+\T1/zpltlf/m/n/12 Porównuj[]c t[] wiedz[] z tym, jak po-winna wygl[]da¢ ma-cier
+z $\OML/npxmi/m/it/12 m\LMS/npxsy/m/n/12 ¹\OML/npxmi/m/it/12 Df[]\LMS/npxsy/m/n
+/12 º$ \T1/zpltlf/m/n/12 do-cho-dzimy do nast[]puj[]cego... 
+ []
+
+[2]
+Overfull \hbox (26.49388pt too wide) in paragraph at lines 93--94
+[]\T1/zpltlf/m/n/12 Analogicznie do przy-padku rze-czy-wi-stego okre-±lamy pro-
+mie« zbie»-no-±ci sze-regu pot[]gowego,
+ []
+
+l1.tex:111: Undefined control sequence.
+l.111 \texbf
+            {DowÃ³d}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) [3] (master.aux) ) 
 Here is how much of TeX's memory you used:
- 7856 strings out of 492895
- 106338 string characters out of 3133477
- 198238 words of memory out of 3000000
- 11520 multiletter control sequences out of 15000+200000
- 47946 words of font info for 100 fonts, out of 3000000 for 9000
+ 7884 strings out of 492895
+ 107132 string characters out of 3133477
+ 200314 words of memory out of 3000000
+ 11546 multiletter control sequences out of 15000+200000
+ 42413 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,13n,39p,841b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ot1-tl
-f.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<C:/Pro
-gram Files/MiKTeX 2.9/fonts/type1/public/newpx/NewPXMI.pfb><C:/Program Files/Mi
-KTeX 2.9/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX 2.9/
-fonts/type1/public/newpx/pxbsys.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
-blic/newpx/pxmiaX.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/newpx/pxs
-ys.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Program Files/MiK
-TeX 2.9/fonts/type1/public/newpx/zplb.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
-pe1/public/newpx/zplr.pfb>
-Output written on master.pdf (2 pages, 91032 bytes).
+ 39i,14n,39p,841b,178s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ts1
+.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/Pro
+gram Files/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/newpx/NewPXMI.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/newpx/pxmiaX.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/newpx/px
+sys.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/tex-gyre/qplr.pfb><C:/P
+rogram Files/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Program Files/MiKTeX 2.9/font
+s/type1/public/newpx/zplb.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/n
+ewpx/zplr.pfb>
+Output written on master.pdf (3 pages, 142449 bytes).
 PDF statistics:
- 49 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
