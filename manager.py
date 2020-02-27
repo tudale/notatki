@@ -5,7 +5,7 @@ import json
 import os
 import subprocess
 #import kivy.app
-
+ 
 def InputCommenterLastTwo(i, n):
     if '{l' in i:
         if ('l' + str(n + 1) + '.' not in i) and ('l' + str(n) + '.' not in i) and ('l' + str(n - 1)+ '.' not in i):

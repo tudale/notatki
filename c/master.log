@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7250 64-bit) (preloaded format=pdflatex 2020.1.24)  26 FEB 2020 14:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7050 64-bit) (preloaded format=pdflatex 2019.6.6)  26 FEB 2020 21:20
 entering extended mode
 **./master.tex
 (master.tex
-LaTeX2e <2019-10-01> patch level 3
-(C:\miktex-portable\texmfs\install\tex/latex/base\article.cls
-Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
-(C:\miktex-portable\texmfs\install\tex/latex/base\size12.clo
-File: size12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
+LaTeX2e <2018-12-01>
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\size12.clo"
+File: size12.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -19,42 +19,42 @@ File: size12.clo 2019/10/25 v1.4k Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (../preamble.tex (C:\miktex-portable\texmfs\install\tex/latex/amsmath\amsmath
-.sty
-Package: amsmath 2019/11/16 v2.17d AMS math features
+) (../preamble.tex
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-(C:\miktex-portable\texmfs\install\tex/latex/amsmath\amstext.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\miktex-portable\texmfs\install\tex/latex/amsmath\amsgen.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks14
 \ex@=\dimen103
 ))
-(C:\miktex-portable\texmfs\install\tex/latex/amsmath\amsbsy.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen104
 )
-(C:\miktex-portable\texmfs\install\tex/latex/amsmath\amsopn.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count88
-LaTeX Info: Redefining \frac on input line 227.
+LaTeX Info: Redefining \frac on input line 223.
 \uproot@=\count89
 \leftroot@=\count90
-LaTeX Info: Redefining \overline on input line 389.
+LaTeX Info: Redefining \overline on input line 385.
 \classnum@=\count91
 \DOTSCASE@=\count92
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
 \Mathstrutbox@=\box27
 \strutbox@=\box28
 \big@size=\dimen105
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 \macc@depth=\count93
 \c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
@@ -75,33 +75,36 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
 \multlinegap=\skip44
 \multlinetaggap=\skip45
 \mathdisplay@stack=\toks18
-LaTeX Info: Redefining \[ on input line 2858.
-LaTeX Info: Redefining \] on input line 2859.
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
-(C:\miktex-portable\texmfs\install\tex/latex/amsfonts\amsfonts.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amsfonts.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
-LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )
-(C:\miktex-portable\texmfs\install\tex/latex/amsfonts\amssymb.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\amssymb.sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 )
-(C:\miktex-portable\texmfs\install\tex/latex/geometry\geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
-(C:\miktex-portable\texmfs\install\tex/latex/graphics\keyval.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(C:\miktex-portable\texmfs\install\tex/generic/iftex\ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-
-(C:\miktex-portable\texmfs\install\tex/generic/iftex\iftex.sty
-Package: iftex 2019/11/07 v1.0c TeX engine tests
-))
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifvtex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
 \Gm@cnth=\count100
 \Gm@cntv=\count101
 \c@Gm@tempcnt=\count102
@@ -115,34 +118,34 @@ Package: iftex 2019/11/07 v1.0c TeX engine tests
 \Gm@layoutvoffset=\dimen119
 \Gm@dimlist=\toks20
 
-(C:\miktex-portable\texmfs\install\tex/latex/geometry\geometry.cfg))
-(C:\miktex-portable\texmfs\install\tex/latex/base\inputenc.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/geometry\geometry.cfg"))
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks21
 \inpenc@posthook=\toks22
 )
-(C:\miktex-portable\texmfs\install\tex/generic/babel\babel.sty
-Package: babel 2019/11/14 3.36 The Babel package
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.sty"
+Package: babel 2019/05/04 3.31 The Babel package
 
-(C:\miktex-portable\texmfs\install\tex/generic/babel\switch.def
-File: switch.def 2019/11/14 3.36 Babel switching mechanism
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\switch.def"
+File: switch.def 2019/05/04 3.31 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\miktex-portable\texmfs\install\tex/latex/arabi\bblopts.cfg
+("C:\Program Files\MiKTeX 2.9\tex/latex/arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\miktex-portable\texmfs\install\tex/latex/babel-polish\polish.ldf
+("C:\Program Files\MiKTeX 2.9\tex/latex/babel-polish\polish.ldf"
 Language: polish 2005/03/31 v1.2l Polish support from the babel system
 
-(C:\miktex-portable\texmfs\install\tex/generic/babel\babel.def
-File: babel.def 2019/11/14 3.36 Babel common definitions
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\babel.def"
+File: babel.def 2019/05/04 3.31 Babel common definitions
 \babel@savecnt=\count103
 \U@D=\dimen120
 
-(C:\miktex-portable\texmfs\install\tex/generic/babel\txtbabel.def)
+("C:\Program Files\MiKTeX 2.9\tex/generic/babel\txtbabel.def")
 \bbl@dirlevel=\count104
 )
 Package babel Info: Making " an active character on input line 83.
@@ -151,7 +154,7 @@ Package babel Info: Making " an active character on input line 83.
 \pl@right=\dimen123
 \pl@temp=\dimen124
 ))
-(C:\miktex-portable\texmfs\install\tex/latex/amscls\amsthm.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/amscls\amsthm.sty"
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks23
 \thm@bodyfont=\toks24
@@ -163,15 +166,15 @@ Package: amsthm 2017/10/31 v2.20.4
 \thm@headsep=\skip48
 \dth@everypar=\toks28
 )
-(C:\miktex-portable\texmfs\install\tex/latex/systeme\systeme.sty
-(C:\miktex-portable\texmfs\install\tex/latex/xstring\xstring.sty
-(C:\miktex-portable\texmfs\install\tex/generic/xstring\xstring.tex
+("C:\Program Files\MiKTeX 2.9\tex/latex/systeme\systeme.sty"
+("C:\Program Files\MiKTeX 2.9\tex/latex/xstring\xstring.sty"
+("C:\Program Files\MiKTeX 2.9\tex/generic/xstring\xstring.tex"
 \integerpart=\count105
 \decimalpart=\count106
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
-(C:\miktex-portable\texmfs\install\tex/generic/systeme\systeme.tex
+("C:\Program Files\MiKTeX 2.9\tex/generic/systeme\systeme.tex"
 \SYS_systemecode=\toks29
 \SYS_systempreamble=\toks30
 \SYSeqnum=\count107
@@ -182,62 +185,63 @@ Package: systeme 2019/01/13 v0.32 Mise en forme de systemes d'equations (CT)
 \c@lemma=\count109
 \c@definition=\count110
 
-(C:\miktex-portable\texmfs\install\tex/latex/parskip\parskip.sty
-Package: parskip 2020-01-22 v2.0d non-zero parskip adjustments
+("C:\Program Files\MiKTeX 2.9\tex/latex/parskip\parskip.sty"
+Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
 
-(C:\miktex-portable\texmfs\install\tex/latex/oberdiek\kvoptions.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(C:\miktex-portable\texmfs\install\tex/generic/oberdiek\ltxcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-(C:\miktex-portable\texmfs\install\tex/generic/oberdiek\kvsetkeys.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(C:\miktex-portable\texmfs\install\tex/generic/oberdiek\infwarerr.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(C:\miktex-portable\texmfs\install\tex/generic/oberdiek\etexcmds.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(C:\miktex-portable\texmfs\install\tex/generic/iftex\ifluatex.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
 ))))
-(C:\miktex-portable\texmfs\install\tex/latex/etoolbox\etoolbox.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
 Package: etoolbox 2019/09/21 v2.5h e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count111
 ))
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\newpxtext.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\newpxtext.sty"
 Package: newpxtext 2017/08/18 v1.321
 
 `newpxtext' v1.321, 2017/08/18 Text macros taking advantage of TeXGyre Pagella 
 and its extensions (msharpe)
-(C:\miktex-portable\texmfs\install\tex/latex/fontaxes\fontaxes.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/fontaxes\fontaxes.sty"
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
 LaTeX Info: Redefining \slshape on input line 33.
 LaTeX Info: Redefining \scshape on input line 37.
 )
-(C:\miktex-portable\texmfs\install\tex/latex/xkeyval\xkeyval.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.sty"
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(C:\miktex-portable\texmfs\install\tex/generic/xkeyval\xkeyval.tex
-(C:\miktex-portable\texmfs\install\tex/generic/xkeyval\xkvutils.tex
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkeyval.tex"
+("C:\Program Files\MiKTeX 2.9\tex/generic/xkeyval\xkvutils.tex"
 \XKV@toks=\toks31
 \XKV@tempa@toks=\toks32
 )
 \XKV@depth=\count112
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(C:\miktex-portable\texmfs\install\tex/latex/base\fontenc.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\fontenc.sty"
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-(C:\miktex-portable\texmfs\install\tex/latex/base\t1enc.def
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1enc.def"
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(C:\miktex-portable\texmfs\install\tex/latex/base\textcomp.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\textcomp.sty"
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -252,13 +256,13 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 
-(C:\miktex-portable\texmfs\install\tex/latex/base\ts1enc.def
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(C:\miktex-portable\texmfs\install\tex/latex/base\ts1enc.dfu
-File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00A4 (decimal 164)
@@ -328,8 +332,6 @@ File: ts1enc.dfu 2019/07/11 v1.2j UTF-8 support for inputenc
    defining Unicode char U+25E6 (decimal 9702)
    defining Unicode char U+25EF (decimal 9711)
    defining Unicode char U+266A (decimal 9834)
-   defining Unicode char U+27E8 (decimal 10216)
-   defining Unicode char U+27E9 (decimal 10217)
    defining Unicode char U+FEFF (decimal 65279)
 ))
 LaTeX Info: Redefining \oldstylenums on input line 334.
@@ -396,12 +398,12 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\newpxmath.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\newpxmath.sty"
 Package: newpxmath 2020/01/09 v1.409
 
 `newpxmath' v1.409, 2020/01/09 Math macros based on pxfonts (msharpe)
-(C:\miktex-portable\texmfs\install\tex/generic/binhex\binhex.tex)
-(C:\miktex-portable\texmfs\install\tex/latex/oberdiek\centernot.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/binhex\binhex.tex")
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\centernot.sty"
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
 \px@tA=\toks33
@@ -493,10 +495,6 @@ LaTeX Font Info:    Overwriting symbol font `largesymbolsPXA' in version `bold'
 \px@cntz=\count114
 \px@IsAlNum=\count115
 \px@sbptoks=\toks35
-LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 461.
-LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 462.
-LaTeX Font Info:    Redeclaring math delimiter \lmoustache on input line 463.
-LaTeX Font Info:    Redeclaring math delimiter \rmoustache on input line 464.
 LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 470.
 LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 471.
 LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 472.
@@ -509,30 +507,6 @@ LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 482.
 LaTeX Font Info:    Redeclaring math delimiter \vert on input line 483.
 LaTeX Font Info:    Redeclaring math symbol \parallel on input line 484.
 LaTeX Font Info:    Redeclaring math delimiter \Arrowvert on input line 485.
-LaTeX Font Info:    Redeclaring math delimiter \Vert on input line 486.
-LaTeX Font Info:    Redeclaring math delimiter \updownarrow on input line 488.
-LaTeX Font Info:    Redeclaring math delimiter \Updownarrow on input line 489.
-LaTeX Font Info:    Redeclaring math delimiter \lvert on input line 494.
-LaTeX Font Info:    Redeclaring math delimiter \rvert on input line 495.
-LaTeX Font Info:    Redeclaring math delimiter \lVert on input line 496.
-LaTeX Font Info:    Redeclaring math delimiter \rVert on input line 497.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 525.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 526.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 527.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 528.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 529.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 530.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 531.
-LaTeX Font Info:    Redeclaring math accent \check on input line 532.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 536.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 537.
-LaTeX Font Info:    Redeclaring math delimiter \ulcorner on input line 1145.
-LaTeX Font Info:    Redeclaring math delimiter \urcorner on input line 1146.
-LaTeX Font Info:    Redeclaring math delimiter \llcorner on input line 1152.
-LaTeX Font Info:    Redeclaring math delimiter \lrcorner on input line 1153.
-LaTeX Font Info:    Redeclaring math delimiter \llbracket on input line 1419.
-LaTeX Font Info:    Redeclaring math delimiter \rrbracket on input line 1421.
-LaTeX Font Info:    Redeclaring math accent \vec on input line 1579.
 \npx@numstart=\count116
 \npx@UCstart=\count117
 \npx@lcstart=\count118
@@ -543,13 +517,13 @@ LaTeX Info: Redefining \not on input line 2132.
 LaTeX Info: Redefining \textsquare on input line 2147.
 LaTeX Info: Redefining \openbox on input line 2149.
 )
-(C:\miktex-portable\texmfs\install\tex/latex/import\import.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/import\import.sty"
 Package: import 2009/03/23  v 5.1
 )
-(C:\miktex-portable\texmfs\install\tex/latex/xifthen\xifthen.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/xifthen\xifthen.sty"
 Package: xifthen 2015/11/05 v1.4.0 Extended ifthen features
 
-(C:\miktex-portable\texmfs\install\tex/latex/tools\calc.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count122
 \calc@Bcount=\count123
@@ -562,33 +536,30 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count124
 \calc@Cskip=\skip51
 )
-(C:\miktex-portable\texmfs\install\tex/latex/base\ifthen.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\miktex-portable\texmfs\install\tex/latex/ifmtarg\ifmtarg.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/ifmtarg\ifmtarg.sty"
 Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
 ))
-(C:\miktex-portable\texmfs\install\tex/latex/pdfpages\pdfpages.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/pdfpages\pdfpages.sty"
 Package: pdfpages 2020/01/28 v0.5q Insert pages of external PDF documents (AM)
 
-(C:\miktex-portable\texmfs\install\tex/latex/eso-pic\eso-pic.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/eso-pic\eso-pic.sty"
 Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
 
-(C:\miktex-portable\texmfs\install\tex/generic/oberdiek\atbegshi.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\atbegshi.sty"
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-
-(C:\miktex-portable\texmfs\install\tex/generic/iftex\ifpdf.sty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
-))
-(C:\miktex-portable\texmfs\install\tex/latex/xcolor\xcolor.sty
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(C:\miktex-portable\texmfs\install\tex/latex/graphics-cfg\color.cfg
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(C:\miktex-portable\texmfs\install\tex/latex/graphics-def\pdftex.def
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-def\pdftex.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
@@ -601,19 +572,19 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 ))
-(C:\miktex-portable\texmfs\install\tex/latex/graphics\graphicx.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphicx.sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\miktex-portable\texmfs\install\tex/latex/graphics\graphics.sty
-Package: graphics 2019/11/01 v1.3d Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\miktex-portable\texmfs\install\tex/latex/graphics\trig.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\miktex-portable\texmfs\install\tex/latex/graphics-cfg\graphics.cfg
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 )
 \Gin@req@height=\dimen127
 \Gin@req@width=\dimen128
@@ -621,7 +592,7 @@ Package graphics Info: Driver file: pdftex.def on input line 105.
 \AM@pagewidth=\dimen129
 \AM@pageheight=\dimen130
 
-(C:\miktex-portable\texmfs\install\tex/latex/pdfpages\pppdftex.def
+("C:\Program Files\MiKTeX 2.9\tex/latex/pdfpages\pppdftex.def"
 File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 )
 \AM@pagebox=\box29
@@ -631,18 +602,17 @@ File: pppdftex.def 2020/01/28 v0.5q Pdfpages driver for pdfTeX (AM)
 \c@AM@survey=\count126
 \AM@templatesizebox=\box30
 )
-(C:\miktex-portable\texmfs\install\tex/latex/oberdiek\transparent.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\transparent.sty"
 Package: transparent 2018/11/18 v1.3 Transparency via pdfTeX's color stack (HO)
 
 
-(C:\miktex-portable\texmfs\install\tex/latex/oberdiek\auxhook.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )))
 (coursepreamble.tex)
-LaTeX Font Info:    Trying to load font information for T1+zpltlf on input line
- 4.
+LaTeX Font Info:    Try loading font information for T1+zpltlf on input line 4.
 
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\t1zpltlf.fd
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\t1zpltlf.fd"
 File: t1zpltlf.fd 2015/01/17 v1.0 font definition file for T1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
@@ -651,10 +621,9 @@ LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 \openout1 = `master.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 4.
-LaTeX Font Info:    Trying to load font information for OML+npxmi on input line
- 4.
+LaTeX Font Info:    Try loading font information for OML+npxmi on input line 4.
 
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\omlnpxmi.fd
+ ("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\omlnpxmi.fd"
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
 LaTeX Font Info:    ... okay on input line 4.
@@ -667,34 +636,32 @@ LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 4.
-LaTeX Font Info:    Trying to load font information for U+npxexa on input line 
-4.
+LaTeX Font Info:    Try loading font information for U+npxexa on input line 4.
 
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\unpxexa.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\unpxexa.fd"
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 4.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
-.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 4.
 
-(C:\miktex-portable\texmfs\install\tex/latex/base\ts1cmr.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 4.
-LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line
- 4.
+LaTeX Font Info:    Try loading font information for LMS+npxsy on input line 4.
 
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\lmsnpxsy.fd
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\lmsnpxsy.fd"
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
 LaTeX Font Info:    ... okay on input line 4.
 LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 4.
-LaTeX Font Info:    Trying to load font information for LMX+npxexx on input lin
-e 4.
+LaTeX Font Info:    Try loading font information for LMX+npxexx on input line 4
+.
 
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\lmxnpxexx.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\lmxnpxexx.fd"
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
 LaTeX Font Info:    ... okay on input line 4.
@@ -736,7 +703,7 @@ LaTeX Font Info:    ... okay on input line 4.
 \c@mv@tabular=\count127
 \c@mv@boldtabular=\count128
 \AtBeginShipoutBox=\box31
-(C:\miktex-portable\texmfs\install\tex/context/base/mkii\supp-pdf.mkii
+("C:\Program Files\MiKTeX 2.9\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count129
 \scratchdimen=\dimen131
@@ -749,50 +716,48 @@ LaTeX Font Info:    ... okay on input line 4.
 \MPnumerator=\count133
 \makeMPintoPDFobject=\count134
 \everyMPtoPDFconversion=\toks39
-) (C:\miktex-portable\texmfs\install\tex/latex/epstopdf-pkg\epstopdf-base.sty
-Package: epstopdf-base 2019/11/24 v2.7 Base part for package epstopdf
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(C:\miktex-portable\texmfs\install\tex/latex/oberdiek\grfext.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-(C:\miktex-portable\texmfs\install\tex/generic/oberdiek\kvdefinekeys.sty
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvdefinekeys.sty"
 Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 ))
-(C:\miktex-portable\texmfs\install\tex/latex/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2019/11/24 v0.31 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
+Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-42.
+38.
 Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 460.
+(grfext)             \AppendGraphicsExtensions on input line 456.
 )
-(C:\miktex-portable\texmfs\install\tex/latex/oberdiek\pdflscape.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\pdflscape.sty"
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
 
-(C:\miktex-portable\texmfs\install\tex/latex/graphics\lscape.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
-Package pdflscape Info: Auto-detected driver: pdftex on input line 84.
-
-(C:\miktex-portable\texmfs\install\tex/generic/iftex\ifxetex.sty
-Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
-)) (l1.tex
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (l1.tex
 LaTeX Font Info:    Font shape `T1/zpltlf/m/n' will be
 (Font)              scaled to size 17.28pt on input line 1.
 LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
 (Font)              scaled to size 17.28pt on input line 1.
-LaTeX Font Info:    Trying to load font information for OT1+zpltlf on input lin
-e 6.
+LaTeX Font Info:    Try loading font information for OT1+zpltlf on input line 6
+.
 
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\ot1zpltlf.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\ot1zpltlf.fd"
 File: ot1zpltlf.fd 2015/01/17 v1.0 font definition file for OT1/zpl/tlf
 )
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
@@ -801,64 +766,74 @@ LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
 (Font)              scaled to size 8.8pt on input line 6.
 LaTeX Font Info:    Font shape `OT1/zpltlf/m/n' will be
 (Font)              scaled to size 6.6pt on input line 6.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
+LaTeX Font Info:    Try loading font information for U+msa on input line 6.
 
-(C:\miktex-portable\texmfs\install\tex/latex/amsfonts\umsa.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
+LaTeX Font Info:    Try loading font information for U+msb on input line 6.
 
-(C:\miktex-portable\texmfs\install\tex/latex/amsfonts\umsb.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+npxmia on input line 
-6.
+LaTeX Font Info:    Try loading font information for U+npxmia on input line 6.
 
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\unpxmia.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\unpxmia.fd"
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsym on input line 
-6.
+LaTeX Font Info:    Try loading font information for U+npxsym on input line 6.
 
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\unpxsym.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\unpxsym.fd"
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 
-6.
+LaTeX Font Info:    Try loading font information for U+npxsyc on input line 6.
 
-(C:\miktex-portable\texmfs\install\tex/latex/newpx\unpxsyc.fd
+("C:\Program Files\MiKTeX 2.9\tex/latex/newpx\unpxsyc.fd"
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 )
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 14.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 8.8pt on input line 14.
+LaTeX Font Info:    Font shape `OT1/zpltlf/b/n' will be
+(Font)              scaled to size 6.6pt on input line 14.
+
 Overfull \hbox (21.16061pt too wide) in paragraph at lines 25--26
 []\T1/zpltlf/m/n/12 Zazwyczaj udaje si[] wy-ra-zi¢ najmniejsz[] pochodn[] w po-
 staci roz-wi-kªa-nej: $\OML/npxmi/m/it/12 x[] \U/npxmia/m/it/12 = \OML/npxmi/m/
 it/12 f []$\T1/zpltlf/m/n/12 .
  []
 
-) [1
+[1
 
-{C:/miktex-portable/texmfs/data/pdftex/config/pdftex.map}] (master.aux) ) 
+{C:/Users/Desant/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `T1/zpltlf/bx/n' in size <12> not available
+(Font)              Font shape `T1/zpltlf/b/n' tried instead on input line 40.
+LaTeX Font Info:    Font shape `T1/zpltlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 40.
+)
+[2] (master.aux) ) 
 Here is how much of TeX's memory you used:
- 8565 strings out of 492484
- 115000 string characters out of 3128406
- 200155 words of memory out of 3000000
- 12674 multiletter control sequences out of 15000+200000
- 31182 words of font info for 66 fonts, out of 3000000 for 9000
+ 7856 strings out of 492895
+ 106338 string characters out of 3133477
+ 198238 words of memory out of 3000000
+ 11520 multiletter control sequences out of 15000+200000
+ 47946 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 50i,9n,47p,841b,135s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/mi
-ktex-portable/texmfs/install/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{C:/miktex-p
-ortable/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<C:/miktex-portable
-/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb><C:/miktex-portable/texmfs
-/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/miktex-portable/texmfs/in
-stall/fonts/type1/public/newpx/pxmiaX.pfb><C:/miktex-portable/texmfs/install/fo
-nts/type1/public/newpx/pxsys.pfb><C:/miktex-portable/texmfs/install/fonts/type1
-/public/newtx/txexs.pfb><C:/miktex-portable/texmfs/install/fonts/type1/public/t
-xfonts/txsyb.pfb><C:/miktex-portable/texmfs/install/fonts/type1/public/newpx/zp
-lb.pfb><C:/miktex-portable/texmfs/install/fonts/type1/public/newpx/zplr.pfb>
-Output written on master.pdf (1 page, 80169 bytes).
+ 39i,13n,39p,841b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ot1-tl
+f.enc}{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}<C:/Pro
+gram Files/MiKTeX 2.9/fonts/type1/public/newpx/NewPXMI.pfb><C:/Program Files/Mi
+KTeX 2.9/fonts/type1/public/newpx/NewPXMI_gnu.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/public/newpx/pxbsys.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
+blic/newpx/pxmiaX.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/newpx/pxs
+ys.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/newtx/txexs.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/public/txfonts/txsyb.pfb><C:/Program Files/MiK
+TeX 2.9/fonts/type1/public/newpx/zplb.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
+pe1/public/newpx/zplr.pfb>
+Output written on master.pdf (2 pages, 91032 bytes).
 PDF statistics:
- 42 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
