@@ -1,3 +1,58 @@
 \subsection{Motywacja}
-Naukę każdej dziedziny matematyki dobrze jest zacząć od solidnej motywacji, od poznania choćby historycznego rysu zagadnień, którymi będziemy się zajmować. Dzięki temu można uniknąć przeładowania abstrakcją. Zatem to, czym będziemy się zajmować na kursie przedmiotów różniczkowalnych, obejmuje zagadnienia naturalnie poh
+Naukę każdej dziedziny matematyki dobrze jest zacząć od solidnej motywacji, od poznania choćby historycznego rysu zagadnień, którymi będziemy się zajmować. Dzięki temu można uniknąć przeładowania abstrakcją. To, czym będziemy się zajmować na kursie przedmiotów różniczkowalnych, obejmuje zagadnienia naturalnie pojawiające się w wielu działach matematyki czy fizyki. Motywacją dla nas, obiektami które chcemy badać, są następujące obiekty:
+\begin{itemize}
+	\item powierzchnie
+		\begin{figure}[ht]
+			    \centering
+			        \incfig{torus}
+				\caption{Przykładowa powierzchnia drugiego stopnia}
+				\label{fig:torus}
+		\end{figure}
+	\item przestrzenie opisywalne (lokalnie) za pomocą skończonej ilości parametrów, na przykład przestrzenie konfiguracyjne rozmaitych układów funkcyjnych. W takich układach parametry traktuje się jako stopnie swobodny. Przykładem może być przestrzeń położeń bryły sztywnej, która jest przestrzenią konfiguracyjną o sześciu stopniach swobody - sześciowymiarową rozmaitością.
 
+	\item podzbiory $\mathbb{R}^n$ lub nawet $\mathbb{C}^n$ zadane równaniami algebraicznymi, np. równanie $z_1^2 + z_2^2 + z_3^3 = 1$ w $\mathbb{C}^3$ opisuje czterowymiarową rozmaitość.
+\end{itemize}
+Dodatkowa motywacja pochodzi z przyczyn fizycznych i matematycznych. W rozmaitych gałęziach nauki w sposób całkowicie naturalny pojawiają się obiekty takie, jak te wyżej wymienione. Z przyczyn praktycznych czy teoretycznych pragnęlibyśmy uprawiać na takich obiektach analizę, np. mówić o różniczkowalności funkcji pomiędzy rozmaitościami, rozpatrywać równania różniczkowe czy analizę wektorową. Możemy np. myśleć o tym, że we wspomnianej wcześniej przestrzeni położeń bryły sztywnej mamy do czynienia z polem wektorowym, które decyduje o tym, jak potencjalnie może się przemieszczać nasza figura.
+
+\section{Rozmaitości topologiczne}
+\begin{definition}[Rozmaitość topologiczna n-wymiaropwa]
+	Przestrzeń topologiczną $M$, która spełnia następujące warunki:
+	\begin{itemize}
+		\item jest przestrzenią Hausdorffa ($T2$, tzn. dla każdych $x,y \in M$ istnieją $U, V$ otwarte, takie, że $x \in U$, $y \in V$ oraz $U \cap V = \emptyset$
+		\item ma przeliczalną bazę
+		\item jest lokalnie euklidesowa wymiaru n, to znaczy każdy punkt ma otwarte otoczenie homeomorficzne z pewnym otwartym podzbiorem w $\mathbb{R}^n$.
+	\end{itemize}
+	będziemy nazywać \textbf{n-wymiarową rozmaitością topologiczną}.
+\end{definition}
+
+Innymi słowy rozmaitością nazywamy coś, co pod lupą wygląda jak przestrzeń $\mathbb{R}^n$, chociaż gdy spojrzymy z daleka to może być zupełnie dziki obiekt. Można by zadać pytanie: no dobrze, punkt trzeci narzuca nam tę lokalną euklidesowskość, ale co z pierwszymi dwoma? Po co nam są takie wymagania?
+
+\subsubsection{Uwaga pierwsza: Hausdorffowość}
+Warunek Hausdorffowości wyklucza niektóre patologie. (\textit{Tutaj pojawi się rysunek, gdy tylko nauczę się robić.}) Ogólniej: Hausdorffowość przerzucić lokalne własności obiektów z $\mathbb{R}^n$ na obiekty w $M$. Np. jeżeli mamy punkt $x \in M$, $\phi : U \to \bar{U}$  gdzie $U$ oraz $\bar{U}$ to otwarte otoczenia punktów $x$ oraz $\phi(x)$ odpowiednio, a ponadto mamy zbiór $\bar{K} \subset \bar{U}$ zwarty w $\mathbb{R}^n$, to warunek bycia przestrzenią Hausdorffa gwarantuje nam, że zbiór $\phi^{-1}\left(\bar{K}\right)$ jest zwarty w $M$. Innymi słowy pozwala lokalnie cofać zwartość.
+
+\subsubsection{Uwaga druga: przeliczalna baza}
+Przeliczalność bazy wyklucza np. 'zbyt duże' przestrzenie, np. $\mathbb{R}^n \times \mathfrak{c}$ (continuum rozłącznych kopii $\mathbb{R}^n$). Bez tego warunku nie byłoby następujących własności rozmaitości topologicznych:
+\begin{itemize}
+	\item każde pokrycie zbiorami otwartymi zawiera przeliczalne podpokrycie
+	\item każda rozmaitość $M$ jest wstępującą sumą otwartych podzbiorów, których domknięcia w $M$ są zwarte
+	\item każda rozmaitość jest parazwarta (tzn. każde otwarte pokrycie posiadania lokalnie skończone rozdrobnienie)
+	\item każdą rozmaitość można zanurzyć w $\mathbb{R}^N$ dla odpowiednio dużego $N$
+\end{itemize}
+
+\subsubsection{Euklidesowość wymiaru n}
+Można zadać pytanie, czy jeżeli mamy rozmaitość topologiczną n-wymiarową $M$, to czy możliwe jest, że istnieje liczba m taka, że $m \neq n$, że $M$ jest także rozmaitością topologiczną m-wymiarową?
+
+Okazuje się, że nie. Negatywnej odpowiedzi udziela twierdzenie o niezmienniczości obszaru, udowodnione przez L. Brouwera w 1912 roku. Dowiódł on, że dla $n \neq m$ otwarty podzbiór w $\mathbb{R}^n$ nie może być homeomorficzny z otwartym podzbiorem $\mathbb{R}^m$. Stąd liczba $n$ jest jednoznacznie przypisana do $M$ i nazywa się ją wymiarem $M$. Oznaczenie: $\mathrm{dim}(M) = n$.
+
+\subsection{Mapy i atlasy}
+\begin{definition}[Mapa, zbiór mapowy]
+	\textbf{Mapą} na rozmaitości topologicznej $M$ nazywamy parę $(U,\phi)$, gdzie $U \subset M$ jest otwartym podzbiorem, zaś $\phi : U \to \bar{U} = \phi(U) \subset_{otw} \mathbb{R}^n$ jest homeomorfizmem na otwarty podzbiór $\mathbb{R}^n$. Zbiór $U$ nazywamy \textbf{zbiorem mapowym}. $(U, \phi)$ jest \textbf{mapą wokół punktu} $p \in M$ gdy $p \in U$ oraz $\phi(p) = 0 \in \bar{U} \subset \mathbb{R}^n$. $(U,\phi)$ nazywamy też lokalnymi współrzędnymi na $M$.
+\end{definition}
+
+Odnotujmy obserwację: rozmaitość topologiczna jest pokryta zbiorami mapowymi.
+
+\textbf{Przykład}: sfera $S^n = \{(x_1, \dots, x_{n+1}) \in \mathbb{R}^{n+1} : \sum_{i=1}^{n+1} x_i^2=1\}$ z topologią dziedziczoną z $\mathbb{R}^{n+1}$ jest rozmaitością topologiczną. Pierwsze dwa warunki definiujące rozmaitość topologiczną są dziedziczone z $\mathbb{R}^{n+1}$. Opiszemy rodzinę map takich, że rodzina zbiorów mapowych okryje całą $S^n$.
+
+Dla $i \in \{1, 2, ..., n+1\}$ definiujemy $U_i^+ = \{x \in S^n : x_i > 0\}$, $U_i^- = \{x \in S^n : x_i < 0\}$. Rodzina zbiorów $\{U_i^+, U_i^- : i \in \{1, \dots, n+1\}\}$ stanowi pokrycie $S^n$, ponieważ każdy $x \in S^n$ ma przynajmniej jedną niezerową współrzędną. Odwzorowania $\phi_i^{\pm} \to \mathbb{R}^n$ dane wzorami $\phi_i^{\pm}(x_1, \dots, x_{n+1}) = (x_1, \dots, \hat{x_i}, \dots, x_{n+1})$ (gdzie $\hat{x_i}$ oznacza pominięcie $x_i$) są homeomorfizmami.
+
+RzeczywiścieÎÐ, obraz odwzorowania $\phi_i^{\pm}(U_i^{\pm}) = \{(x_1, \dots, x_n) \in \mathbb{R}^n : \sum_{i=1}^{n} x_i^2 < 1\} = D^n$ stanowi 
