@@ -18,3 +18,6 @@ c/master.log
 *.gz
 *.aux
 *.gz
+*.pyc
+*.aux
+*.log
