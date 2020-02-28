@@ -31,3 +31,4 @@ c/master.log
 *.pyc
 *.aux
 *.log
+__current

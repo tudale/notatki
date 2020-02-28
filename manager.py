@@ -76,5 +76,5 @@ if choice == '2':  # Zmień aktywny kurs
     else:
         current_course = courses_i[choice]
         procManager.course = courses_i[choice]
-        with open('__current','r+') as h:
+        with open('__current','w+') as h:
             h.write(current_course)
