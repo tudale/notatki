@@ -1,31 +1,25 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from __future__ import print_function
+from processes import ProcessManager
+import sys
 import json
 import os
 import subprocess
+import utilities
 #import kivy.app
- 
-def InputCommenterLastTwo(i, n):
-    if '{l' in i:
-        if ('l' + str(n + 1) + '.' not in i) and ('l' + str(n) + '.' not in i) and ('l' + str(n - 1)+ '.' not in i):
-            return "%" + i[1:]
-        else:
-            return ' ' + i[1:]
-    else:
-        return i
-
-def InputCommenterUncomment(i):
-    if '{l' in i:
-        return ' ' + i[1:]
 
 with open('c/_name', "r+") as f:
     with open('lic-4/courses.json') as g:
         courses = json.loads(g.read())
         print("### Aktywny kurs: " + courses[f.read()])
+
 print("1. Pracuj nad kursem")
 print("2. Zmień aktywny kurs")
 choice = input(": ")
+
+procManager = ProcessManager()
+
 
 if choice == '1':  # Pracuj nad kursem
     with open('c/_lectures.json') as g:
@@ -38,67 +32,24 @@ if choice == '1':  # Pracuj nad kursem
 
     print(len(lectures) + 1)
     if choice2== "0":
-        with open("c/master.tex", "r+") as fil:
-            content = fil.read()
-            list = content.split('\n')
-            list = [InputCommenterUncomment(it, len(lectures)) for it in list]
-            content = "\n".join(list)
-        with open("c/master.tex", "w") as fil:
-            fil.write(content)
-        with open("c/master.tex", "r+") as fil:
+        utilities.RewriteFileUncommented("c/master.tex")
+        with open("c/_name", "r+") as fil:
             name = fil.read()
-            subprocess.Popen('start vim c\\master.tex', shell=True)
             os.system("cmd /c copy c\\master.pdf __out\\"+name+".pdf")
-            subprocess.Popen("start SumatraPDF __out\\"+name+".pdf", shell=True)
+            procManager.OpenMasterFile(name)
 
     elif choice2 == str(len(lectures) + 1):  # nowa notatka
         name = input("Nazwa nowego wykładu: ")
         lectures[len(lectures) + 1] = name
-        with open('c/_lectures.json', "w+") as f:
-            f.write(json.dumps(lectures))
-        f = open("c\\master.tex", "r")
-        contents = f.readlines()
-        f.close()
-        contents.insert(len(contents) - 1, " \input{l" + str(len(lectures) ) + ".tex}\n")
-        f = open(r"c\\master.tex", "w")
-        contents = "".join(contents)
-        f.write(contents)
-        f.close()
-
-        with open("c/master.tex", "r+") as fil:
-            content = fil.read()
-            list = content.split('\n')
-            list=[InputCommenterLastTwo(it,len(lectures)) for it in list]
-            content = "\n".join(list)
-        with open("c/master.tex", "w") as fil:
-            fil.write(content)
-
+        utilities.AppendNewLecture(lectures, len(lectures))
+        utilities.RewriteFileUncommented("c/master.tex")
         with open('c/l' + str(len(lectures) ) + '.tex', "w+") as f:
             f.write("")
-            print("vim " + 'c\\l' + str(len(lectures) ) + '.tex')
-            subprocess.Popen('start vim c\\l' + str(len(lectures) ) + '.tex', shell=True)
-            subprocess.Popen('start SumatraPDF c\\master.pdf', shell=True)
-            subprocess.call('cmdow \"C:\WINDOWS\system32\cmd.exe - vim   c\\l' + str(
-                len(lectures) ) + '.tex\" /mov -7 0 /siz 960 1047 /ren vim', shell=True)
-            subprocess.call('cmdow \"master.pdf - SumatraPDF\" /mov 939 0 /siz 988 1047 /ren sumatra /res', shell=True)
-
+        procManager.OpenLectureFile(len(lectures))
 
     else: #coś innego niż nowa notatka
-        print(lectures[choice2])
-        with open("c/master.tex", "r+") as fil:
-            content = fil.read()
-            list = content.split('\n')
-            list = [InputCommenterLastTwo(it, int(choice2)) for it in list]
-            content = "\n".join(list)
-            print(content)
-        with open("c/master.tex", "w") as fil:
-            fil.write(content)
-        print("vim " + 'c\\l' + str(choice2) + '.tex')
-        subprocess.Popen('start vim c\\l' + str(choice2) + '.tex', shell=True)
-        subprocess.Popen('start SumatraPDF c\\master.pdf', shell=True)
-        subprocess.call('cmdow \"C:\WINDOWS\system32\cmd.exe - vim   c\\l' + str(choice2) + '.tex\" /mov -7 0 /siz 960 1047 /ren vim', shell=True)
-        subprocess.call('cmdow \"master.pdf - SumatraPDF\" /mov 939 0 /siz 988 1047 /ren sumatra /res', shell=True)
-
+        utilities.RewriteFileUncommented("c/master.tex")
+        procManager.OpenLectureFile(choice2)
 
 if choice == '2':  # Zmień aktywny kurs
     with open('lic-4/courses.json') as f:
