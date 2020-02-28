@@ -11,18 +11,22 @@ import utilities
 
 with open('lic-4/courses.json') as g:
     courses = json.loads(g.read())
-with open('c/_name', "r+") as f:
+
+with open('__current') as h:
+    current_course = h.read()
+
+with open('lic-4/' + current_course + '/_name', "r+") as f:
     print("### Aktywny kurs: " + courses[f.read()])
 
 print("1. Pracuj nad kursem")
 print("2. Zmień aktywny kurs")
 choice = input(": ")
 
-procManager = ProcessManager()
+procManager = ProcessManager(current_course)
 
 
 if choice == '1':  # Pracuj nad kursem
-    with open('c/_lectures.json') as g:
+    with open('lic-4/' + current_course + '/_lectures.json') as g:
         lectures = json.loads(g.read())
         print("[0] Plik główny", sep='')
     for i in lectures:
@@ -32,21 +36,19 @@ if choice == '1':  # Pracuj nad kursem
 
     print(len(lectures) + 1)
     if choice2== "0":
-        utilities.RewriteFileUncommented("c/master.tex")
-        with open("c/_name", "r+") as fil:
-            name = fil.read()
-            os.system("cmd /c copy c\\master.pdf __out\\"+name+".pdf")
-            procManager.OpenMasterFile(name)
+        utilities.RewriteFileUncommented("lic-4/" + current_course + "/master.tex")
+        os.system('cmd /c copy lic-4/' + current_course + '/master.pdf PDF/'+current_course+".pdf")
+        procManager.OpenMasterFile()
 
     elif choice2 == str(len(lectures) + 1):  # nowa notatka
         name = input("Nazwa nowego wykładu: ")
         lectures[len(lectures) + 1] = name
-        utilities.AppendNewLecture(lectures, len(lectures))
-        utilities.RewriteFileUncommented("c/master.tex")
+        utilities.AppendNewLecture(lectures, len(lectures),current_course)
+        utilities.RewriteFileUncommented("lic-4/" + current_course + "/master.tex")
         procManager.OpenLectureFile(len(lectures))
 
     else: #coś innego niż nowa notatka
-        utilities.RewriteFileUncommented("c/master.tex")
+        utilities.RewriteFileUncommented("lic-4/" + current_course + "/master.tex")
         procManager.OpenLectureFile(choice2)
 
 if choice == '2':  # Zmień aktywny kurs
@@ -65,8 +67,14 @@ if choice == '2':  # Zmień aktywny kurs
             with open('lic-4/courses.json', "w+") as f:
                 f.write(json.dumps(courses))
             utilities.CreateCourseFolder(folder)
+            current_course = folder
+            procManager.current_course = folder
+            with open('__current','r+') as h:
+                h.write(current_course)
         else:
             print("Kurs już istnieje")
     else:
-        os.system("cmd /c rmdir c")
-        os.system("cmd /c mklink /j c \"lic-4\\" + courses_i[choice] + "\"")
+        current_course = courses_i[choice]
+        procManager.course = courses_i[choice]
+        with open('__current','r+') as h:
+            h.write(current_course)

@@ -28,40 +28,35 @@ def RewriteFileUncommented(filename):
         fil.write(content)
 
 # odpowiada za dodanie nowego wykładu do plików
-def AppendNewLecture(lectures,lectureNumber):
-    with open('c/l' + str(len(lectures) ) + '.tex', "w+") as f: # tworzy nowy plik tex
+def AppendNewLecture(lectures,lectureNumber,current_course):
+    with open("lic-4/" + current_course + '/l' + str(len(lectures) ) + '.tex', "w+") as f: # tworzy nowy plik tex
         f.write("")
 
-    with open('c/_lectures.json', "w+") as f: # dodaje plik to json
+    with open("lic-4/" + current_course + '/_lectures.json', "w+") as f: # dodaje plik to json
         f.write(json.dumps(lectures))
 
-    f = open("c\\master.tex", "r") # wczytuje zawartość
+    f = open("lic-4/" + current_course + "/master.tex", "r") # wczytuje zawartość
     contents = f.readlines()
     f.close()
 
     contents.insert(len(contents) - 1, " \input{l" + str(lectureNumber) + ".tex}\n") # dorzuca linijkę łączącą nowoutworzony plik
 
-    f = open(r"c\\master.tex", "w") # zapisuje nową zawartość pliku
+    f = open("lic-4/" + current_course + "/master.tex", "w") # zapisuje nową zawartość pliku
     contents = "".join(contents)
     f.write(contents)
     f.close()
 
 # tworzy folder dla nowego kursu, folder - nazwa folderu do utworzenia
 def CreateCourseFolder(folder):
-    print("cmd /c mkdir lic-4/" + folder)
     os.system("cmd /c mkdir lic-4\\" + folder)
-    os.system("cmd /c rmdir c")
-    os.system("cmd /c mklink /j c \"lic-4\\" + folder + "\"")
-    with open('c/master.tex', "w+") as f:
+    with open("lic-4/" + current_course + '/master.tex', "w+") as f:
         f.write(
             "\\documentclass[12pt]{article}\n\\input{../preamble.tex}\n\\input{coursepreamble.tex}\n\\begin{document}\n\n\\end{document}")
-    with open('c/coursepreamble.tex', "w+") as f:
+    with open("lic-4/" + current_course + '/coursepreamble.tex', "w+") as f:
         f.write("\\title{" + name + "}\n")
-    with open('c/___' + folder, "w+") as f:
-        f.write("")
-    with open('c/_name', "w+") as f:
+    with open("lic-4/" + current_course + '/_name', "w+") as f:
         f.write(folder)
-    with open('c/_lectures.json', "w+") as f:
+    with open("lic-4/" + current_course + '/_lectures.json', "w+") as f:
         f.write("{}")
        
 # zwraca listę, zawierającą kolejno mapowania folder->nazwa i id->folder dla kursów

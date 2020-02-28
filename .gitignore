@@ -19,3 +19,5 @@ c/master.log
 *.aux
 *.gz
 *.pyc
+*.aux
+*.log
