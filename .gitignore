@@ -28,3 +28,6 @@ c/master.log
 *.log
 *.gz
 *.swp
+*.pyc
+*.aux
+*.log
