@@ -18,7 +18,7 @@ Dodatkowa motywacja pochodzi z przyczyn fizycznych i matematycznych. W rozmaityc
 \begin{definition}[Rozmaitość topologiczna n-wymiaropwa]
 	Przestrzeń topologiczną $M$, która spełnia następujące warunki:
 	\begin{itemize}
-		\item jest przestrzenią Hausdorffa ($T2$, tzn. dla każdych $x,y \in M$ istnieją $U, V$ otwarte, takie, że $x \in U$, $y \in V$ oraz $U \cap V = \emptyset$
+		\item jest przestrzenią Hausdorffa ($T2$, tzn. dla każdych $x,y \in M$ istnieją $U, V$ otwarte, takie, że $x \in U$, $y \in V$ oraz $U \cap V = \emptyset$)
 		\item ma przeliczalną bazę
 		\item jest lokalnie euklidesowa wymiaru n, to znaczy każdy punkt ma otwarte otoczenie homeomorficzne z pewnym otwartym podzbiorem w $\mathbb{R}^n$.
 	\end{itemize}
@@ -42,7 +42,7 @@ Przeliczalność bazy wyklucza np. 'zbyt duże' przestrzenie, np. $\mathbb{R}^n 
 \subsubsection{Euklidesowość wymiaru n}
 Można zadać pytanie, czy jeżeli mamy rozmaitość topologiczną n-wymiarową $M$, to czy możliwe jest, że istnieje liczba m taka, że $m \neq n$, że $M$ jest także rozmaitością topologiczną m-wymiarową?
 
-Okazuje się, że nie. Negatywnej odpowiedzi udziela twierdzenie o niezmienniczości obszaru, udowodnione przez L. Brouwera w 1912 roku. Dowiódł on, że dla $n \neq m$ otwarty podzbiór w $\mathbb{R}^n$ nie może być homeomorficzny z otwartym podzbiorem $\mathbb{R}^m$. Stąd liczba $n$ jest jednoznacznie przypisana do $M$ i nazywa się ją wymiarem $M$. Oznaczenie: $\mathrm{dim}(M) = n$.
+Okazuje się, że nie. Negatywnej odpowiedzi udziela twierdzenie o niezmienniczości obszaru, udowodnione przez L. Brouwera w 1911 roku. Dowiódł on, że dla $n \neq m$ otwarty podzbiór w $\mathbb{R}^n$ nie może być homeomorficzny z otwartym podzbiorem $\mathbb{R}^m$. Stąd liczba $n$ jest jednoznacznie przypisana do $M$ i nazywa się ją wymiarem $M$. Oznaczenie: $\mathrm{dim}(M) = n$.
 
 \subsection{Mapy i atlasy}
 \begin{definition}[Mapa, zbiór mapowy]
@@ -55,4 +55,12 @@ Odnotujmy obserwację: rozmaitość topologiczna jest pokryta zbiorami mapowymi.
 
 Dla $i \in \{1, 2, ..., n+1\}$ definiujemy $U_i^+ = \{x \in S^n : x_i > 0\}$, $U_i^- = \{x \in S^n : x_i < 0\}$. Rodzina zbiorów $\{U_i^+, U_i^- : i \in \{1, \dots, n+1\}\}$ stanowi pokrycie $S^n$, ponieważ każdy $x \in S^n$ ma przynajmniej jedną niezerową współrzędną. Odwzorowania $\phi_i^{\pm} \to \mathbb{R}^n$ dane wzorami $\phi_i^{\pm}(x_1, \dots, x_{n+1}) = (x_1, \dots, \hat{x_i}, \dots, x_{n+1})$ (gdzie $\hat{x_i}$ oznacza pominięcie $x_i$) są homeomorfizmami.
 
-RzeczywiścieÎÐ, obraz odwzorowania $\phi_i^{\pm}(U_i^{\pm}) = \{(x_1, \dots, x_n) \in \mathbb{R}^n : \sum_{i=1}^{n} x_i^2 < 1\} = D^n$ stanowi 
+Rzeczywiście, obraz tego odwzorowania $\phi_i^{\pm}(U_i^{\pm}) = \{(x_1, \dots, x_n) \in \mathbb{R}^n : \sum_{i=1}^{n} x_i^2 < 1\} = D^n$ stanowi otwarty dysk o promieniu 1 w $\mathbb{R}^n$. Możemy w prosty sposób zdefiniować odwzorowanie odwrotne:
+\begin{align*}
+	\left(\phi_i^{\pm}\right)^{-1}(x_1, \dots, x_n) = \left(x_1, \dots, x_{i-1}, \pm \sqrt{1-\sum_{i=1}^{n} x_i^2}, x_{i}, \dots, x_n\right).
+\end{align*}
+Tak określone odwzorowanie jest ciągłe i łatwo można sprawdzić, że jest ono rzeczywiście odwzorowaniem odwrotnym. Zatem funkcje $\phi_{i}^{\pm} : U_{i}^{\pm} \to \bar{U_{i}^{\pm}}$ są homeomorfizmami.
+
+\section{Rozmaitości różniczkowalne (gładkie)}
+\subsubsection{Motywacja}
+Jeżeli mamy daną funkcję $f : M \to \mathbb{R}$ naturalnym pytaniem jest, czy i w jaki sposób możemy zdefiniować jej różniczkowalność? Pytanie to pojawić się może podczas rozważań natury fizycznej, a także podczas badania różnych obiektów w rozmaitych dziedzinach matematyki, dlatego warto spróbować - do tego właśnie będziemy dążyć. Skoro umiemy dobrze różniczkować funkcje pomiędzy przestrzeniami lokalnie euklidesowymi, pierwszym krokiem jest wyrażenie $f$ w mapie $(U,\phi)$ na $M$, to znaczy badać złożenie $f\circ \phi^{-1} : \mathbb{R}^n \supset \bar{U} \to \mathbb{R}$. 
