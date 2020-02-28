@@ -18,3 +18,13 @@ c/master.log
 *.gz
 *.aux
 *.gz
+*.gz
+*.swp
+*.un~
+*.tex~
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+*.swp
