@@ -8,7 +8,7 @@ Naukę każdej dziedziny matematyki dobrze jest zacząć od solidnej motywacji, 
 				\caption{Przykładowa powierzchnia drugiego stopnia}
 				\label{fig:torus}
 		\end{figure}
-	\item przestrzenie opisywalne (lokalnie) za pomocą skończonej ilości parametrów, na przykład przestrzenie konfiguracyjne rozmaitych układów funkcyjnych. W takich układach parametry traktuje się jako stopnie swobodny. Przykładem może być przestrzeń położeń bryły sztywnej, która jest przestrzenią konfiguracyjną o sześciu stopniach swobody - sześciowymiarową rozmaitością.
+	\item przestrzenie opisywalne (lokalnie) za pomocą skończonej ilości parametrów, na przykład przestrzenie konfiguracyjne rozmaitych układów fizycznych. W takich układach parametry traktuje się jako stopnie swobodny. Przykładem może być przestrzeń położeń bryły sztywnej, która jest przestrzenią konfiguracyjną o sześciu stopniach swobody - sześciowymiarową rozmaitością.
 
 	\item podzbiory $\mathbb{R}^n$ lub nawet $\mathbb{C}^n$ zadane równaniami algebraicznymi, np. równanie $z_1^2 + z_2^2 + z_3^3 = 1$ w $\mathbb{C}^3$ opisuje czterowymiarową rozmaitość.
 \end{itemize}
@@ -63,4 +63,42 @@ Tak określone odwzorowanie jest ciągłe i łatwo można sprawdzić, że jest o
 
 \section{Rozmaitości różniczkowalne (gładkie)}
 \subsubsection{Motywacja}
-Jeżeli mamy daną funkcję $f : M \to \mathbb{R}$ naturalnym pytaniem jest, czy i w jaki sposób możemy zdefiniować jej różniczkowalność? Pytanie to pojawić się może podczas rozważań natury fizycznej, a także podczas badania różnych obiektów w rozmaitych dziedzinach matematyki, dlatego warto spróbować - do tego właśnie będziemy dążyć. Skoro umiemy dobrze różniczkować funkcje pomiędzy przestrzeniami lokalnie euklidesowymi, pierwszym krokiem jest wyrażenie $f$ w mapie $(U,\phi)$ na $M$, to znaczy badać złożenie $f\circ \phi^{-1} : \mathbb{R}^n \supset \bar{U} \to \mathbb{R}$. 
+Jeżeli mamy daną funkcję $f : M \to \mathbb{R}$ naturalnym pytaniem jest, czy i w jaki sposób możemy zdefiniować jej różniczkowalność? Pytanie to pojawić się może podczas rozważań natury fizycznej, a także podczas badania różnych obiektów w rozmaitych dziedzinach matematyki, dlatego warto spróbować - do tego właśnie będziemy dążyć. Skoro umiemy dobrze różniczkować funkcje pomiędzy przestrzeniami lokalnie euklidesowymi, pierwszym krokiem jest wyrażenie $f$ w mapie $(U,\phi)$ na $M$, to znaczy badać złożenie $f\circ \phi^{-1} : \mathbb{R}^n \supset \bar{U} \to \mathbb{R}$. Powinniśmy jednak założyć kilka warunków. W przeciwnym wypadku mogłoby dojść na przykład do takiej sytuacji, że w jednej mapie $(U,\phi)$ złożenie $f \circ \phi^{-1}$ było różniczkowane, ale w mapie $(U,\psi)$ mielibyśmy nieróżniczkowalną $f \circ \psi^{-1}$, wówczas mielibyśmy problem. Z tego względu najpierw zadbamy o to, aby wyposażyć rozmaitość w dodatkową strukturę, która pomoże nam wprowadzić różniczkowalność funkcji określonej na rozmaitości.
+
+\subsection{Mapy i atlasy - przygotowanie struktury gładkiej}
+\begin{definition}[(Gładka) Zgodność map]
+	Mapy $(U,\phi)$ oraz $(U,\psi)$ nazywamy \textbf{zgodnymi} (dokładniej: gładko zgodnymi) jeżeli \textbf{odwzorowania przejścia} $\phi \circ \psi^{-1}$ oraz $\psi circ \phi^{-1}$ są gładkie, tj. różniczkowalne dowolną ilość razy w każdym punkcie.
+\end{definition}
+
+\begin{definition}[(Gładka) Zgodność map]
+	Mapy $(U,\phi)$ oraz $(V,\psi)$ nazywamy \textbf{zgodnymi} jeżeli zachodzi jeden z dwóch warunków:
+	\begin{itemize}
+		\item $U\cap V = \emptyset$,
+		\item $U\cap V \neq \emptyset$, wtedy $\phi \big|_{U\cap V}$ oraz  $\psi \big|_{U\cap V}$ są zgodne w sensie poprzedniej definicji.
+	\end{itemize}
+\end{definition}
+
+Odnotujmy, że zachodzi $f \circ \phi_1^{-1} = \left(f \circ \phi_2^{-1}) \circ \left( \phi_2 \circ \phi_1^{-1} \right)$, tzn. znając opis $f$ w terminach jednej mapy, możemy wyrazić $f$ w terminach drugiej mapy poprzez zastosowanie odpowiedniego odwzorowania przejścia.
+
+\subsubsection{Gładki atlas}
+\begin{definition}[Gładki atlas]
+	\textbf{Gładkim atlasem} na rozmaitości topologicznej $M$ nazywamy rodzinę map $\left\{(U_{\alpha}, \phi_{\alpha})\right\}_{\alpha}$ takich, że
+	\begin{itemize}
+		\item $\{U_{\alpha}\}_{\alpha}$ pokrywa $M$ oraz
+		\item każde dwie mapy z tego zbioru są gładko zgodne
+	\end{itemize}
+\end{definition}
+
+\textbf{Przykład}: rodzina map $\left\{ \left\( U_i^{\pm}, \phi_i^{\pm} \right) : i \in \{1, \dots, n+1 \} \right\}$ na $S^{n+1}$ jest gładko zgodna i zbiory mapowe pokrywają całe $S^{n+1}$, stanowią więc atlas. Sprawdzenie gładkiej zgodności pozostawiamy jako nietrudne ćwiczenie dla czytelnika.
+
+\subsubsection{Uwagi o odwzorowaniu przejścia}
+\begin{itemize}
+	\item Jeżeli mamy $\phi_1 : U \to \bar{U_1}$, $\phi_2 U \to \bar{U_2}$, to odwzorowanie przejścia $\phi_2 \circ \phi_1^{-1}$ przeprowadza $\bar{U_1}$ w $\bar{U_2}$, natomiast złożenie odwrotne $\phi_1 \circ \phi_2^{-1}$ przeprowadza $\bar{U_2}$ w $\bar{U_1}$.
+\end{itemize}
+Załóżmy, że mamy dane $(U,\phi)$ oraz $(V,\psi)$. Wówczas:
+\begin{itemize}
+	\item Odzworowanie przejścia $\phi \circ \psi^{-1}$ będziemy oznaczać $\phi\psi^{-1}$. Mamy zatem $\phi\psi^{-1} : \psi(U\capV) \to \phi(U\capV)$ oraz $\psi\phi^{-1} : \phi(U\cap V) \to \psi(U \cap V)$. Odwzorowania te są homeomorfizmami.
+	\item Warto zauważyć, że tak jak byśmy oczekiwali, $\left(\phi\psi^{-1}\right)^{-1} = \psi\phi^{-1}$.
+	\item Gdy mapy są gładkie, to odwzorowania przejścia też są gładkie i gładko odwracalne. Tego typu odwzorowania (tj. gładkie i gładko odwracalne) nazywamy \textbf{dyfeomorfizmami}, w tym przypadku mamy dyfeomorfizm między $\psi(U\cap V)$ a $\phi(U \cap V)$.
+	\item Dla map z gładkiego atlasu odzworowania przejścia mają nieosobliwe Jakobiany.
+\end{itemize}
