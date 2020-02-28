@@ -108,8 +108,24 @@ Przypomnijmy, że \textbf{szeregiem potęgowym} nazywamy szereg postaci $\sum_{n
 \subsection{Twierdzenie o holomorficzności szeregu potęgowego}
 Niech $R$ będzie promieniem zbieżności szeregu potęgowego $\sum_{n=0}^{\infty} a_n z^n$, i niech $f(z) = \sum_{n=0}^{\infty} a_nz^n$ dla $z \in B(0,R)$. Wtedy $f$ jest holomorficzna w $B(0,R)$ a jej pochodna dana jest szeregiem $\sum_{n=1}^{\infty} na_n z^{n_1}$.
 
-\texbf{Dowód}
-Niebawem.
+\textbf{Dowód}: analogicznie w przypadku zmiennej rzeczywistej, do znalezienia np. w skrypcie prof. R. Szwarca.
+
+Jako wniosek z tego twierdzenia płynie fakt, że różniczkowanie szeregu potęgowego wewnątrz $B(0,R)$ odbywa się wyraz po wyrazie.
 
 \subsection{Ważny szereg}
-W budowie.
+Szczególnie istotnym dla nas szeregiem będzie $e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}$ (czasem także $\exp(z)$), czyli funkcja wykładnicza. Omówimy kilka własności tego szeregu.
+\begin{itemize}
+	\item Promień zbieżności tego szeregu $R=\infty$. Oznacza to, że jest on dobrze określony na całym $\mathbb{C}$.
+	\item Niech $z, w \in \mathbb{C}$. Wtedy $e^{z+w} = e^z \cdot e^w$. Istotnie:
+		\begin{align*}
+			\sum_{n=0}^{\infty} \frac{(z+w)^n}{n!} = \sum_{n=0}^{\infty} \frac{1}{n!} \sum_{k=0}^{n} \binom{n}{k} z^k w^{n-k} = \sum_{n=0}^{\infty} \sum_{k=0}^{n} \frac{z^k}{k!} \frac{w^{n-k}}{(n-k)!} = \left(\sum_{n=0}^{\infty} \frac{z^n}{n!} \right) \left( \sum_{k=0}^{\infty} \frac{w^n}{n!} \right) = e^z \cdot e^w
+		\end{align*}
+	\item Funkcja $e^z$ spełnia zależność $\left(e^z\right)' = e^z$. Rzeczywiście:
+		\begin{align*}
+		\left(e^z\right)' = \sum_{n=0}^{\infty} \left(\frac{z^n}{n!}\right)' = \sum_{n=1}^{\infty} \frac{z^{n+1}}{(n+1)!} = e^z
+		\end{align*}
+	\item Jako ćwiczenie pozostawiamy własność $e^{it} = \cos(t) + i\sin(t)$ (wzór Eulera).
+	\item Wnioskiem z powyższego jest $e^{i\pi} = \cos(\pi) + i\sin(\pi) = -1$ (tożsamość Eulera).
+	\item Ponadto warto zauważyć, że $e^{z+2\pi i} = e^z \cdot e^{2\pi i} = e^z \cdot \left(\cos(2\pi) + i\sin(2\pi)) = e^z$, czyli funkcja $e^z$ jest okresowa o okresie $2 \pi i$.
+		\item Przypomnijmy także związek między postacią wykładniczą, a postacią trygonometryczną liczby zespolonej: $e^{a+bi} = e^a\left(\cos b + i\sin b)$ (również wniosek ze wzoru Eulera, tutaj $a, b \in \mathbb{R}$).
+\end{itemize}

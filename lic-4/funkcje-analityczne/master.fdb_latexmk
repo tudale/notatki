@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1582812706 "master.tex" "master.pdf" "master" 1582812711
-  "../preamble.tex" 1582726055 851 eebf534aca0d7768f8b6562243bdb03f ""
+["pdflatex"] 1582891348 "master.tex" "master.pdf" "master" 1582891348
+  "../preamble.tex" 1582726385 879 85f6e96c72d5d5d074fbc63f5a7334cb ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1438987067 2880 847ca622ad468c3dafba6a3f9d89a636 ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1421694697 2083 60e36f8eac802fcaf19eabe2633b406e ""
   "C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/tex-gyre/q-ts1.enc" 1525737014 3124 3813fd4c981d99822890a2861b0d274c ""
@@ -107,7 +107,6 @@
   "C:/Program Files/MiKTeX 2.9/tex/latex/graphics/trig.sty" 1523172385 4094 cb9221976ed8a183afad65b59aa8629a ""
   "C:/Program Files/MiKTeX 2.9/tex/latex/ifmtarg/ifmtarg.sty" 1523848845 318 019510c713feab56160631df4423d2aa ""
   "C:/Program Files/MiKTeX 2.9/tex/latex/import/import.sty" 1237905540 5149 44c7223e2a76dc66e41be8c1fb1477de ""
-  "C:/Program Files/MiKTeX 2.9/tex/latex/lm/lmodern.sty" 1256929440 1606 c17281c7cff2bbd7ff0173e1433487ec ""
   "C:/Program Files/MiKTeX 2.9/tex/latex/newpx/lmsnpxsy.fd" 1467758904 694 74f1360ae44f64fd2ee5afe681f49916 ""
   "C:/Program Files/MiKTeX 2.9/tex/latex/newpx/lmxnpxexx.fd" 1467759654 690 f81411dddf695b387c215e4d3b12bf7b ""
   "C:/Program Files/MiKTeX 2.9/tex/latex/newpx/newpxmath.sty" 1578597463 98104 059d739d18e02988dff5514a37ca5fe3 ""
@@ -139,10 +138,10 @@
   "C:/Users/Desant/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt" 1559815339 4235386 2c2d10d8aa7e2ef68bd94e5495de6868 ""
   "C:/Users/Desant/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map" 1582808583 176751 66da8a0acda3d76a271e16966062735a ""
   "coursepreamble.tex" 1582807489 31 e3aebab3564611f0664b7730ce64f8da ""
-  "l1.tex" 1582812687 8457 5f4b4a020a028f249a36bded6e8d278d ""
-  "master.aux" 1582812707 1156 fcfe07dd35c05a2de23ef7be41d75834 "pdflatex"
-  "master.tex" 1582807500 135 6ad4b1508139d11516e26ff19ba26169 ""
+  "l1.tex" 1582891347 10283 3de3ad99eb32405e34a859a3f5857f5e ""
+  "master.aux" 1582891294 1156 fcfe07dd35c05a2de23ef7be41d75834 "pdflatex"
+  "master.tex" 1582890248 135 6ad4b1508139d11516e26ff19ba26169 ""
   (generated)
+  "master.log"
   "master.aux"
   "master.pdf"
-  "master.log"
