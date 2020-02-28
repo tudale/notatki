@@ -33,10 +33,10 @@ Warunek Hausdorffowości wyklucza niektóre patologie. (\textit{Tutaj pojawi si�
 \subsubsection{Uwaga druga: przeliczalna baza}
 Przeliczalność bazy wyklucza np. 'zbyt duże' przestrzenie, np. $\mathbb{R}^n \times \mathfrak{c}$ (continuum rozłącznych kopii $\mathbb{R}^n$). Bez tego warunku nie byłoby następujących własności rozmaitości topologicznych:
 \begin{itemize}
-	\item każde pokrycie zbiorami otwartymi zawiera przeliczalne podpokrycie
-	\item każda rozmaitość $M$ jest wstępującą sumą otwartych podzbiorów, których domknięcia w $M$ są zwarte
-	\item każda rozmaitość jest parazwarta (tzn. każde otwarte pokrycie posiadania lokalnie skończone rozdrobnienie)
-	\item każdą rozmaitość można zanurzyć w $\mathbb{R}^N$ dla odpowiednio dużego $N$
+	\item każde pokrycie zbiorami otwartymi zawiera przeliczalne podpokrycie,
+	\item każda rozmaitość $M$ jest wstępującą sumą otwartych podzbiorów, których domknięcia w $M$ są zwarte,
+	\item każda rozmaitość jest parazwarta (tzn. każde otwarte pokrycie posiadania lokalnie skończone rozdrobnienie),
+	\item każdą rozmaitość można zanurzyć w $\mathbb{R}^N$ dla odpowiednio dużego $N$.
 \end{itemize}
 
 \subsubsection{Euklidesowość wymiaru n}
@@ -67,7 +67,7 @@ Jeżeli mamy daną funkcję $f : M \to \mathbb{R}$ naturalnym pytaniem jest, czy
 
 \subsection{Mapy i atlasy - przygotowanie struktury gładkiej}
 \begin{definition}[(Gładka) Zgodność map]
-	Mapy $(U,\phi)$ oraz $(U,\psi)$ nazywamy \textbf{zgodnymi} (dokładniej: gładko zgodnymi) jeżeli \textbf{odwzorowania przejścia} $\phi \circ \psi^{-1}$ oraz $\psi circ \phi^{-1}$ są gładkie, tj. różniczkowalne dowolną ilość razy w każdym punkcie.
+	Mapy $(U,\phi)$ oraz $(U,\psi)$ nazywamy \textbf{zgodnymi} (dokładniej: gładko zgodnymi) jeżeli \textbf{odwzorowania przejścia} $\phi \circ \psi^{-1}$ oraz $\psi \circ \phi^{-1}$ są gładkie, tj. różniczkowalne dowolną ilość razy w każdym punkcie.
 \end{definition}
 
 \begin{definition}[(Gładka) Zgodność map]
@@ -85,7 +85,7 @@ Odnotujmy, że zachodzi $f \circ \phi_1^{-1} = \left(f \circ \phi_2^{-1}) \circ 
 	\textbf{Gładkim atlasem} na rozmaitości topologicznej $M$ nazywamy rodzinę map $\left\{(U_{\alpha}, \phi_{\alpha})\right\}_{\alpha}$ takich, że
 	\begin{itemize}
 		\item $\{U_{\alpha}\}_{\alpha}$ pokrywa $M$ oraz
-		\item każde dwie mapy z tego zbioru są gładko zgodne
+		\item każde dwie mapy z tego zbioru są gładko zgodne.
 	\end{itemize}
 \end{definition}
 
@@ -100,5 +100,31 @@ Załóżmy, że mamy dane $(U,\phi)$ oraz $(V,\psi)$. Wówczas:
 	\item Odzworowanie przejścia $\phi \circ \psi^{-1}$ będziemy oznaczać $\phi\psi^{-1}$. Mamy zatem $\phi\psi^{-1} : \psi(U\capV) \to \phi(U\capV)$ oraz $\psi\phi^{-1} : \phi(U\cap V) \to \psi(U \cap V)$. Odwzorowania te są homeomorfizmami.
 	\item Warto zauważyć, że tak jak byśmy oczekiwali, $\left(\phi\psi^{-1}\right)^{-1} = \psi\phi^{-1}$.
 	\item Gdy mapy są gładkie, to odwzorowania przejścia też są gładkie i gładko odwracalne. Tego typu odwzorowania (tj. gładkie i gładko odwracalne) nazywamy \textbf{dyfeomorfizmami}, w tym przypadku mamy dyfeomorfizm między $\psi(U\cap V)$ a $\phi(U \cap V)$.
-	\item Dla map z gładkiego atlasu odzworowania przejścia mają nieosobliwe Jakobiany.
+	\item Dla map z gładkiego atlasu odzworowania przejścia mają w każdym punkcie nieosobliwy Jakobian (macierz pochodnych cząstkowych).
+	\item Dla zgodnych map $(U,\phi)$ oraz $(V,\psi)$ i dla $f : M \to \mathbb{R}$ odwzorowanie $f \circ \phi^{-1} \big|_{\phi(U \cap V)}$ jest gładkie wtedy i tylko wtedy gdy gładkie jest odwzorowanie $f \circ \psi^{-1} \big|_{\psi(U \cap V)}$.
 \end{itemize}
+Jesteśmy już gotowi do wprowadzenia nowej, istotnej struktury dla dalszego badania rozmaitości.
+
+\subsection{Pojęcie rozmaitości gładkiej}
+\begin{definition}[Rozmaitość gładka] 
+	Parę $(M,A)$ gdzie $M$ jest rozmaitością topologiczną, zaś $A$ jest gładkim atlasem na $M$, nazywamy \textbf{rozmaitością gładką}.
+\end{definition}
+
+Pierwszym pytaniem jakie się nasuwa jest to, jak mogą się mieć do siebie dwa atlasy? Jak mogą one względem siebie wyglądać? Czy możemy je jakoś klasyfikować? W odpowiedzi na te pytania musimy wprowadzić kilka dodatkowych pojęć.
+
+\begin{definition}[Zgodność atlasów]
+	Mówimy, że \textbf{mapa} $(U, \phi)$ jest \textbf{zgodna z atlasem} $A$, jeżeli jest ona zgodna z każdą mapą $(V,\psi) \in A$. Mówimy, że \textbf{atlasy} $A_1, A_2$ są \textbf{zgodne}, jeżeli każda mapa z $A_1$ jest zgodna z $A_2$.
+\end{definition}
+Odnotujmy, że zgodne atlasy zadają tę samą strukturę rozmaitości gładkiej na rozmaitości topologicznej $M$.
+
+\begin{definition}[Atlas maksymalny]
+	Atlas $A$ nazywamy \textbf{maksymalnym}, jeżeli każda mapa zgodna z $A$ należy do $A$.
+\end{definition}
+
+Prawdziwe są następujące dwa fakty, które pomagają nam w pewien sposób klasyfikować atlasy zadające taką samą strukturę gładką na rozmaitości. Ich dowód pozostawiamy jako ćwiczenie.
+\begin{itemize}
+	\item Każdy atlas $A$ na rozmaitości $M$ zawiera się w dokładnie jednym atlasie maksymalnym na $M$, co więcej jest to atlas złożony z wszystkich map zgodnych z $A$.
+	\item Zgodne atlasy zawierają się w tym samym atlasie maksymalnym.
+\end{itemize}
+
+
