@@ -1,115 +1,50 @@
+﻿\section{Motywacja}
+
+Motywacją do rozważania równań różniczkowych będzie zagadnienie rozpadu promieniotwórczego.
+Eksperymentalnie sprawdzono, że tempo rozpadu jest wprost proporcjonalne do masy pierwiastka promieniotwórczego.
+Czyli dla pewnej $k>0$ mamy $x'(t)=-kx(t)$, gdzie $x\left(t \right) $ to masa pierwiastka w chwili $t$.
+Szukamy funkcji masy zależnej od czasu $m(t)$, pomijać będziemy oznaczenie argumentu, oraz będziemy pisać $x = m$ oraz $\dot{x}:=m'$. 
+
+Zgadnąć możemy, że rozwiązaniem są funkcje postaci $x\left( t \right) = e^{-kt}\cdot x\left( 0 \right) $. Powstaje naturalne pytanie -- czy wszystkie rozwiązania są takiej postaci? W tym przypadku możemy wykonać przejścia równoważne:
+\begin{align*}
+	\dot{x}+kx&=0\\
+	\dot{x}e^{kt}+ke^{kt}x&=0\\
+	\left( xe^{kt} \right) ^{\boldsymbol{\cdot}}&=0 
+.\end{align*} Zatem $xe^{kt}$ jest stałą, więc $x\left( t \right) =c\cdot e^{-kt} = x(0)\cdot e^{-kt}$. 
+
 \section{Definicja}
-Niech $\Omega \subseteq \mathbb{C}$ będzie zbiorem otwartym, $f : \Omega \to \mathbb {C}$, oraz niech $z \in \Omega$. Mówimy,  że $f$ jest holomorficzna (różniczkowalna w sensie zespolonym) w punkcie $z$ jeżeli granica
+Układem równań równiczkowych zwyczajnych $m$-tego rzędu nazywamy wyrażenie: \[
+	F\left(t,x,\dot{x},\ddot{x},\ldots,x^{(m)}\right)=0 
+,\] gdzie 
 \begin{align*}
-	\lim_{h\to0} \frac{f(z+h)-f(z)}{h}
-\end{align*}
-istnieje. Oznaczamy ją przez $f'(z)$ i nazywamy wartością pochodnej funkcji $f$ w punkcie $z$. Mówimy, że $f$ jest holomorficzna w obszarze $\Omega$ jeżeli jest holomorficzna w każdym punkcie tego obszaru. Fakt, że funkcja jest holomorficzna w $\Omega$ oznaczamy także jako $f \in H(\Omega)$ lub $f \in \mathcal{O}(\Omega)$.
+	x: & \quad\mathbb{R}\supseteq I \to \mathbb{R}^{n}\\
+	F:&  \quad\mathbb{R}^{1+\left( m+1 \right) n} \to \mathbb{R}^{k}
+.\end{align*}
 
-\textbf{Przykłady}
-\begin{itemize}
-	\item Niech $f(z) = z^2$. Wówczas $\lim_{h\to 0} \frac{f(z+h)-f(z)}{h} = \lim_{h\to 0} \frac{(z+h)^2-z^2}{h} = \lim_{h\to 0} \frac{2hz+h^2}{h} = \lim_{h\to 0} 2z+h = 2z$. Zatem funkcja jest holomorficzna w każdym punkcie $\mathbb{C}$ i jej pochodna w punkzie $z$ wynosi $2z$.
-	\item Odnotujmy nieco ogólniejszy fakt. Jeżeli $f(z) = \frac{P(z)}{Q(z)}$, a $P, Q$ są wielomianami, wówczas taka funkcja jest holomorficzna w całej swojej dziedzinie. W szczególności biorąc $Q(z) = 1$ wnioskujemy, że każdy wielomian jest holomorficzny w $\mathbb{C}$.
-	\item Rozważmy $f(z) = \bar{z}$. Zauważmy, że $\frac{f(z+h)-f(z)}{h} = \frac{\bar{h}}{h}$. Jeżeli $h \in \mathbb{R}$, to $\frac{\bar{h}}{h} =  1$, natomiast jeżeli $h \in i\mathbb{R}$, to $\frac{\bar{h}}{h} = -1$. Z tego względu granica ilorazów różnicowych (w sensie zespolonym) funkcji $f(z)$ nie istnieje w żadnym punkcie. Funkcja nie jest holomorficzna w żadnym punkcie.
-\end{itemize}
+Zazwyczaj udaje się wyrazić najmniejszą pochodną w postaci rozwikłanej: $x^{\left( m \right) }=f\left( t, \dot{x}, \ldots, x^{\left( m-1 \right) } \right) $. Zwykle zakłada się różniczkowalność lub lipschitzowskość funkcji $f$. 
 
-\subsection{Alternatywne definicje}
-Istnieje kilka równoważnych definicji holomorficzności w punkcie $z$.
-\begin{itemize}
-	\item Istnieje $d \in \mathbb{C}$ takie, że $\lim_{h\to 0} \frac{|f(z+h)-f(z)-d\cdot h|}{|h|} = 0$.
-		W tej deficji moduł nie jest konieczny, jednak warto odnotować podobieństwo tego sformułowania ze sformułowaniem różniczkowalności funkcji $\mathbb{R}^n \to \mathbb{R}^k$.
+\section{Redukcja do układu równań pierwszego rzędu}
 
-	\item Istnieje $d \in \mathbb{C}$ takie, że nasza funkcja dobrze przybliża się na pewnym otoczeniu punktu $z$, tj. $f(z) = f(z) + dh + \Psi(h)h$ dla pewnej funkcji $\Psi : B(0,\epsilon) \to \mathbb{C}$ takiej, że $\lim_{h \to 0} \Psi(h) = 0$. 
-\end{itemize}
+Jeżeli mamy $x^{\left( m \right) }=f\left(t,\dot{x},\ldots,x^{\left( m-1 \right) }\right)$, to położywszy $y_{k}=x^{(k)}$, otrzymamy $$\dot{y_{0}} = y_1, \ldots, \quad \dot{y_{m-2}}=y_{m-1}, \quad \dot{y_{m-1}}=y_m=x^{\left( m \right) }=f\left( t,y \right) $$ dla $y=\left( y_0,...,y_{m-1} \right) \in \mathbb{R}^{m}$ . 
+A zatem mamy $\dot{y} = g\left( t,y \right) $.
+\section{Badanie roztworów nasyconych}
+Kolejny przykład zastosowania równań różniczkowych. Stwierdzono, że w cieczy można rozpuścić ilość soli, która zwiększa się proporcjonalnie do zmiany temperatur: $\Delta s=k\Delta T$, a więc $\frac{\Delta s}{\Delta T}=kS$, czyli w granicy $\frac{dS}{dt}=kS$. Znamy rozwiązanie tego równania, $S\left( T \right) =S\left( 0 \right) $. Biorąc $s_0=S(T_0), s_1=S(T_1)$, dostaniemy coś, co chętnie bym opisał, ale nie mam notatek. Niech ktoś podeśle. Serio dajcie. :(
 
-\subsection{Podstawowe własności}
-Zauważmy, że przykład pierwszy pokazuje nam, że dla wielomianów pochodna w sensie zespolonym funkcji zespolonej odpowiada pochodnej funkcji rzeczywistej. Prawdziwe są również następujące własności, które znamy z teorii funkcji rzeczywistej:
-\begin{itemize}
-	\item $(f+g)' = f' + g'$
-	\item $(f \cdot g)' = f' \cdot g + f \cdot g'$ (reguła Leibniza)
-	\item $(f \circ g)' = f'(g) \cdot g'$ (reguła łańcucha)
-\end{itemize}
-Ich dowód jest prostym ćwiczeniem i przebiega identycznie jak w przypadku funkcji zmiennej rzeczywistej.
-
-\section{Holomorficzność a różniczkowalność w sensie zespolonym}
-Możemy wprowadzić naturalne utożsamienie $\mathbb{C}$ z płaszczyzną $\mathbb{R}^2$ w taki sposób, że punktowi $\mathbb{C} \ni x+iy$ odpowiada punkt $(x,y) \in \mathbb{R}^2$. Funkcję $f : \Omega \to \mathbb{C}$ możemy utożsamić z funkcją $\mathbb{R}^2 \supseteq U \to \mathbb{R}^2$ ($U$ - zbiór otwarty) i zapisać wprost $f(x+iy) = f(x,y) = (u(x,y),v(x,y))$, gdzie $u$ oraz $v$ są takimi funkcjami, że w 'zespolonym zapisie' mamy $f = u+iv$.
-Przypomnijmy, że różniczkowalność funkcji traktowanej jako funkcję z jakiegoś podzbioru $\mathbb{R}^2$ w $\mathbb{R}^2$ definiujemy następująco: $f$ jest różniczkowalna w punkcie $z$, jeżeli zachodzi
+\section{Metoda rozdzielania zmiennych}
+Załóżmy, że mamy do czynienia z równaniem postaci $x'(t) = g(t)f\left(x(t)\right)$, albo pisząc zwięźlej: $x' = g(t)f(x)$, gdzie $x : \mathbb{R} \supseteq I \to \mathbb{R}$, $f : x\left[I\right] \to \mathbb{R}$. Załóżmy też, że $f(x) \neq 0$ dla wszystkich argumentów. Ponadto, niech dany będzie nam warunek początkowy: $x(t_0) = x_0$. Wprowadźmy następujące oznaczenia:
 \begin{align*}
-	\lim_{h\to 0} \frac{\Vert f(z+h)-f(z)-L h \Vert}{\Vert h \Vert} = 0
+	G(t) =& \int_{t_0}^{t} g(s) ds \\
+	F(x) =& \int_{x_0}^{x(t)} \frac{1}{f(s)} ds
 \end{align*}
-dla pewnego liniowego $L : \mathbb{R}^2 \to \mathbb{R}^2$ zwanego pochodną $f$ (w punkcie $z$) i oznaczanego $Df_z$.
-Zauważmy, że jeżeli $f$ jest holomorficzna w punkcie $z$, to jest też różniczkowalna w sensie rzeczywistym w tym punkcie oraz $Df_z$ jest mnożeniem przez $f'(z)$ (por. pierwsza alternatywna definicja). Rodzi się naturalne pytanie, czy prawdziwa jest implikacja w drugą stronę, tzn. czy wiedząc, że $f$ jest różniczkowalna w sensie rzeczywistym w punkcie $z$, możemy powiedzieć, że jest ona na pewno holomorficzna?
+Wówczas równanie $G(t) = F(x)$ zadaje zależność między $x(t)$ a $t$, będącą rozwiązaniem równania. Nie zawsze z takiej zależności możemy 'odczytać' jawny wzór, ale z twierdzenia o funkcji uwikłanej często możemy wnioskować istnienie rozwiązań, choćby lokalnych. Równania postaci $x' = f(x)g(t)$ nazywamy równaniami \textbf{o rozdzielonych zmiennych}. 
 
-Aby odpowiedzieć na to pytanie, musimy zobaczyć jak wygląda macierz przekształcenia $Df_z$ funkcji holomoricznej, czyli jak wygląda macierz mnożenia przez liczbę zespoloną. Zauważmy, że $(a+bi)(x+iy) = (ax-by) + i(bx+ay)$. Możemy zatem zapisać:
+\textbf{Przykład}. Rozważmy równanie $e^{-x}(1+x')=1$. Prostymi przekształceniami algebraicznymi sprowadzamy równanie do postaci $x' = \frac{1-e^{-x}}{e^{-x}} = e^x-1$. W tym przypadku $f(x) = e^x-1$, $g(t) = 1$. Stąd wynika, że:
 \begin{align*}
-	\begin{pmatrix}
-		x \\
-		y
-	\end{pmatrix} 
-	\mapsto 
-	\begin{pmatrix}
-		ax-by \\
-		bx+ay
-	\end{pmatrix}
-	=
-	\begin{pmatrix}
-		a & -b \\
-		b & a
-	\end{pmatrix}
-	\begin{pmatrix}
-		x \\
-		y
-	\end{pmatrix}
+	G(t) =& \int_{t_0}^{t} 1 ds = t-t_0+c_1 \\
+	F(x) =& \int_{x_0}^{x(t)} \frac{1}{e^s-1} ds = \log|e^{-s}-1|\bigg|_{x_0}^{x(t)} = \log \left| \frac{e^{-x(t)}-1}{e^{-x_0}-1}\right| +c_2
 \end{align*}
-Widzimy zatem jak wygląda macierz mnożenia przez liczbę $a+bi$. Przypomnijmy, że z teorii funkcji zmiennej rzeczywistej wiemy, że dla $f = (u,v)$ mamy
+Zatem $x(t)$ możemy zapisać jako funkcję uwikłaną za pomocą następującego równania:
 \begin{align*}
-	m(Df_z) = 
-	\begin{pmatrix}
-		\frac{\partial u}{\partial x} & \frac{\partial u}{\partial y} \\
-		\frac{\partial v}{\partial x} & \frac{\partial v}{\partial y}
-	\end{pmatrix}
-	=
-	\begin{pmatrix}
-		u_x & u_y \\
-		v_x & v_y
-	\end{pmatrix}
+	t-t_0 + C = \log\left|\frac{e^{-x(t)}-1}{e^{-x_0}-1}\right|
 \end{align*}
-Porównując tę wiedzę z tym, jak powinna wyglądać macierz $m(Df_z)$ dochodzimy do następującego...
-
-\subsection{Twierdzenie (równania Cauchy'ego-Riemanna)}
-Funkcja $f$ jest holomorficzna wtedy i tylko wtedy, gdy jest różniczkowalna w sensie rzeczywistym oraz zachodzi $u_x = v_y, u_y = -v_x$ (tak zwane równania Cauchy'ego-Riemanna).
-
-\textbf{Przykłady}
-\begin{itemize}
-	\item Rozważmy $f(z) = z^2$. Mamy wtedy $f(x+iy) = (x+iy)^2 = (x^2-y^2) + i(2xy)$. $u(x+iy) = x^2-y^2$, $v(x+iy)=2xy$. Widzimy, że $u_x = 2x$, $u_y = -2y$, $v_x = 2y$, $v_y = 2x$. Równania C.-R-. są spełnione w każdym punkcie, zatem w każdym punkcie funkcja jest holomorficzna.
-	
-	\item Rozważmy $f(z) = \bar{z}$, czyli $f(x+iy) = x-iy$. $u(x+iy) = x$, $v(x+iy) = -y$. Nietrudno sprawdzić, że $v_x = -u_y = 0$, ale $1 = u_x \neq v_y = -1$. Równania C.-R. nie są spełnione w żadnym punkcie, w żadnym punkcie funkcja ta nie jest holomorficzna.
-\end{itemize}
-
-\section{Szeregi potęgowe}
-Omówione przez nas przykłady uwzględniały jedynie funkcje wymierne, w szczególności wielomiany. Na co dzień jednak posługujemy się ogromem innych funkcji, które chcielibyśmy przedłużyć do dziedziny zespolonej. Niestety naturalne definicje, na przykład geometryczne definicje funkcji trygonometrycznych, ciężko jest nam przenieść na dziedzinę zespoloną. W tym celu przyda nam się rozszerzenie teorii szeregów potęgowych znanych z dotychczasowej analizy. 
-
-Przypomnijmy, że \textbf{szeregiem potęgowym} nazywamy szereg postaci $\sum_{n=0}^{\infty} a_n z^n$, gdzie $a_n \in \mathbb{C}$, a $z$ jest zmienną.
-\begin{itemize}
-	\item Analogicznie do przypadku rzeczywistego określamy promień zbieżności szeregu potęgowego, $R = (\limsup_{n\to\infty} \sqrt[n]{|a_n|})^{-1}$. Gdy granica pierwiastków wynosi $\infty$ przyjmujemy $R=0$, jeżeli granica wynosi $0$, przyjmujemy $R = \infty$.
-	\item Szereg potęgowy zbiega bezwzględnie i niemal jednostajnie w $B(0,R)$. Zbieżność jednostajna oznacza, że zbiega on na każdym zwartym podzbiorze $B(0,R)$.
-	\item Szereg jest rozbieżny dla $|z|>R$.
-\end{itemize}
-
-\textbf{Przykłady}
-\begin{itemize}
-	\item $\sum_{n=0}^{\infty} z^n$, wtedy $R=1$ oraz $\sum_{n=0}^{\infty} z^n = \frac{1}{1-z}$ dla $|z|<R=1$.
-	\item $e^z = \sum_{n=0}^{\infty} \frac{z^n}{n!}$, $R=\infty$
-	\item $\sin(z) = \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n+1}}{(2n+1)!}$, $\cos(z) = \sum_{n=0}^{\infty} (-1)^n \frac{z^{2n}}{(2n)!}$, w obu przypadkach mamy $R = \infty$
-	\item \dots
-\end{itemize}
-
- Kolejnym ważnym faktem znanym z analizy matematycznej jest twierdzenie o różniczkowaniu szeregu potęgowego. Okazuje się, że analizując funkcje zespolone możemy ten fakt uogólnić, co zrobimy w następnym paragrafie.
-
-\subsection{Twierdzenie o holomorficzności szeregu potęgowego}
-Niech $R$ będzie promieniem zbieżności szeregu potęgowego $\sum_{n=0}^{\infty} a_n z^n$, i niech $f(z) = \sum_{n=0}^{\infty} a_nz^n$ dla $z \in B(0,R)$. Wtedy $f$ jest holomorficzna w $B(0,R)$ a jej pochodna dana jest szeregiem $\sum_{n=1}^{\infty} na_n z^{n_1}$.
-
-\texbf{Dowód}
-Niebawem.
-
-\subsection{Ważny szereg}
-W budowie.
+Stała $C = c_1-c_2$ jest dowolna, natomiast zadając stałe $t_0$ oraz $x_0$ sprawiamy, że tak otrzymane rozwiązanie równania różniczkowego będzie spełniać równość $f(t_0) = x_0$. W istocie w tym przypadku możemy wyliczyć $x(t)$ i wyrazić w jawny sposób, jednak nie jest to ani konieczne, ani wygodne.
