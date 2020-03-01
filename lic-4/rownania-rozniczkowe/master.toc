@@ -1,6 +1,0 @@
-\babel@toc {polish}{}
-\contentsline {section}{\numberline {1}Motywacja}{2}% 
-\contentsline {section}{\numberline {2}Definicja}{2}% 
-\contentsline {section}{\numberline {3}Redukcja do uk\IeC {\l }adu r\IeC {\'o}wna\IeC {\'n} pierwszego rz\IeC {\k e}du}{3}% 
-\contentsline {section}{\numberline {4}Badanie roztwor\IeC {\'o}w nasyconych}{3}% 
-\contentsline {section}{\numberline {5}Metoda rozdzielania zmiennych}{3}% 
