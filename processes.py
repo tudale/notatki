@@ -1,5 +1,6 @@
 import os
 import subprocess
+import time
 
 class ProcessManager:
     def __init__(self,current_course):
@@ -15,3 +16,5 @@ class ProcessManager:
             subprocess.call('cmdow \"C:\WINDOWS\system32\cmd.exe - vim   lic-4/' + self.current_course + '/l' + str(
                 number ) + '.tex\" /mov -7 0 /siz 960 1047 /ren vim', shell=True)
             subprocess.call('cmdow \"master.pdf - SumatraPDF\" /mov 939 0 /siz 988 1047 /ren sumatra /res', shell=True)
+            time.sleep(2.0)
+            time.sleep(1.0)
