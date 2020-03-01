@@ -4,9 +4,9 @@ Naukę każdej dziedziny matematyki dobrze jest zacząć od solidnej motywacji, 
 	\item powierzchnie
 		\begin{figure}[ht]
 			    \centering
-			        \incfig{torus}
-				\caption{Przykładowa powierzchnia drugiego stopnia}
-				\label{fig:torus}
+			    \incfigscale{torus}{0.6}
+			    \caption{Torus - przykładowa powierzchnia drugiego stopnia}
+			    \label{fig:torus}
 		\end{figure}
 	\item przestrzenie opisywalne (lokalnie) za pomocą skończonej ilości parametrów, na przykład przestrzenie konfiguracyjne rozmaitych układów fizycznych. W takich układach parametry traktuje się jako stopnie swobodny. Przykładem może być przestrzeń położeń bryły sztywnej, która jest przestrzenią konfiguracyjną o sześciu stopniach swobody - sześciowymiarową rozmaitością.
 
@@ -24,6 +24,13 @@ Dodatkowa motywacja pochodzi z przyczyn fizycznych i matematycznych. W rozmaityc
 	\end{itemize}
 	będziemy nazywać \textbf{n-wymiarową rozmaitością topologiczną}.
 \end{definition}
+
+\begin{figure}[ht]
+	    \centering
+	        \incfig{rysunek}
+		    \caption{Lokalna euklidesowość}
+		    \label{fig:rozmaitosc}
+\end{figure}
 
 Innymi słowy rozmaitością nazywamy coś, co pod lupą wygląda jak przestrzeń $\mathbb{R}^n$, chociaż gdy spojrzymy z daleka to może być zupełnie dziki obiekt. Można by zadać pytanie: no dobrze, punkt trzeci narzuca nam tę lokalną euklidesowskość, ale co z pierwszymi dwoma? Po co nam są takie wymagania?
 
@@ -54,6 +61,14 @@ Odnotujmy obserwację: rozmaitość topologiczna jest pokryta zbiorami mapowymi.
 \textbf{Przykład}: sfera $S^n = \{(x_1, \dots, x_{n+1}) \in \mathbb{R}^{n+1} : \sum_{i=1}^{n+1} x_i^2=1\}$ z topologią dziedziczoną z $\mathbb{R}^{n+1}$ jest rozmaitością topologiczną. Pierwsze dwa warunki definiujące rozmaitość topologiczną są dziedziczone z $\mathbb{R}^{n+1}$. Opiszemy rodzinę map takich, że rodzina zbiorów mapowych okryje całą $S^n$.
 
 Dla $i \in \{1, 2, ..., n+1\}$ definiujemy $U_i^+ = \{x \in S^n : x_i > 0\}$, $U_i^- = \{x \in S^n : x_i < 0\}$. Rodzina zbiorów $\{U_i^+, U_i^- : i \in \{1, \dots, n+1\}\}$ stanowi pokrycie $S^n$, ponieważ każdy $x \in S^n$ ma przynajmniej jedną niezerową współrzędną. Odwzorowania $\phi_i^{\pm} \to \mathbb{R}^n$ dane wzorami $\phi_i^{\pm}(x_1, \dots, x_{n+1}) = (x_1, \dots, \hat{x_i}, \dots, x_{n+1})$ (gdzie $\hat{x_i}$ oznacza pominięcie $x_i$) są homeomorfizmami.
+
+\begin{figure}[ht]
+	    \centering
+	    \def\svgscale{0.7}
+	    \import{./figures/}{dolna_s2.pdf_tex}
+	    \caption{$U_2^- \subset S^2 \subset \mathbb{R}^$}
+	    \label{fig:riemmans-theorem}
+    \end{figure}
 
 Rzeczywiście, obraz tego odwzorowania $\phi_i^{\pm}(U_i^{\pm}) = \{(x_1, \dots, x_n) \in \mathbb{R}^n : \sum_{i=1}^{n} x_i^2 < 1\} = D^n$ stanowi otwarty dysk o promieniu 1 w $\mathbb{R}^n$. Możemy w prosty sposób zdefiniować odwzorowanie odwrotne:
 \begin{align*}
